@@ -1,0 +1,988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Faza 3: Dokumentacja klasy BrylaGeometryczna</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Faza 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_bryla_geometryczna.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_bryla_geometryczna-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy BrylaGeometryczna</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Tworzy pojęcie bryły geometrycznej.  
+ <a href="class_bryla_geometryczna.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla BrylaGeometryczna</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna__inherit__graph.png" border="0" usemap="#_bryla_geometryczna_inherit__map" alt="Inheritance graph"/></div>
+<map name="_bryla_geometryczna_inherit__map" id="_bryla_geometryczna_inherit__map">
+<area shape="rect" title="Tworzy pojęcie bryły geometrycznej." alt="" coords="226,5,377,32"/>
+<area shape="rect" href="class_gora_grania.html" title="Towrzy pojęcie Góry z granią" alt="" coords="5,80,101,107"/>
+<area shape="rect" href="class_gora_szczyt.html" title="Towrzy pojęcie Góry z ostrym szczytem." alt="" coords="126,80,221,107"/>
+<area shape="rect" href="class_graniastoslup.html" title="Tworzy pojęcie graniastosłupa." alt="" coords="245,80,357,107"/>
+<area shape="rect" href="class_plaskowyz.html" title="Towrzy pojęcie Płaskowyżu." alt="" coords="381,80,472,107"/>
+<area shape="rect" href="class_prostopadloscian.html" title="Tworzy pojęcie prostopadłościanu." alt="" coords="496,80,629,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla BrylaGeometryczna:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna__coll__graph.png" border="0" usemap="#_bryla_geometryczna_coll__map" alt="Collaboration graph"/></div>
+<map name="_bryla_geometryczna_coll__map" id="_bryla_geometryczna_coll__map">
+<area shape="rect" title="Tworzy pojęcie bryły geometrycznej." alt="" coords="5,124,156,151"/>
+<area shape="rect" href="class_wektor.html" title=" " alt="" coords="27,5,134,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab913be25b5d9bc26a11bc26cd652c1e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#ab913be25b5d9bc26a11bc26cd652c1e5">BrylaGeometryczna</a> (const std::string &amp;nazwa_brylywzorcowej, const std::string &amp;nazwa_brylyfinalnej)</td></tr>
+<tr class="memdesc:ab913be25b5d9bc26a11bc26cd652c1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy obiekt bryły geometrycznej w zależności od podanych argumentów.  <a href="class_bryla_geometryczna.html#ab913be25b5d9bc26a11bc26cd652c1e5">Więcej...</a><br /></td></tr>
+<tr class="separator:ab913be25b5d9bc26a11bc26cd652c1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3d75488bd3debeba8a1c6361efdbe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#adf3d75488bd3debeba8a1c6361efdbe8">BrylaGeometryczna</a> ()</td></tr>
+<tr class="memdesc:adf3d75488bd3debeba8a1c6361efdbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy domyślny "pusty" obiekt bryły geometrycznej.  <a href="class_bryla_geometryczna.html#adf3d75488bd3debeba8a1c6361efdbe8">Więcej...</a><br /></td></tr>
+<tr class="separator:adf3d75488bd3debeba8a1c6361efdbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae222ef3aacdbfef61ed4ca09604e338a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#ae222ef3aacdbfef61ed4ca09604e338a">~BrylaGeometryczna</a> ()</td></tr>
+<tr class="memdesc:ae222ef3aacdbfef61ed4ca09604e338a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor obiektu <a class="el" href="class_bryla_geometryczna.html" title="Tworzy pojęcie bryły geometrycznej.">BrylaGeometryczna</a>.  <a href="class_bryla_geometryczna.html#ae222ef3aacdbfef61ed4ca09604e338a">Więcej...</a><br /></td></tr>
+<tr class="separator:ae222ef3aacdbfef61ed4ca09604e338a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bebe1cb6dd8c95547c61059abd080b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b">Skaluj</a> (const <a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;Wierz) const</td></tr>
+<tr class="memdesc:ac6bebe1cb6dd8c95547c61059abd080b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skaluje wierzchołek bryły.  <a href="class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b">Więcej...</a><br /></td></tr>
+<tr class="separator:ac6bebe1cb6dd8c95547c61059abd080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b266277f5b85679f8652708cac1cb4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e">WezSkale</a> ()</td></tr>
+<tr class="memdesc:a8b266277f5b85679f8652708cac1cb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia zmianę skali przez referencję  <a href="class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e">Więcej...</a><br /></td></tr>
+<tr class="separator:a8b266277f5b85679f8652708cac1cb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9aa4f6fc142a274baa938503fbe7d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#abe9aa4f6fc142a274baa938503fbe7d5">WezSkale</a> () const</td></tr>
+<tr class="memdesc:abe9aa4f6fc142a274baa938503fbe7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia odczytanie skali.  <a href="class_bryla_geometryczna.html#abe9aa4f6fc142a274baa938503fbe7d5">Więcej...</a><br /></td></tr>
+<tr class="separator:abe9aa4f6fc142a274baa938503fbe7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a877f887d4a32adf29c319dcac2334e"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e">WezNazwePliku_BrylaWzorcowa</a> () const</td></tr>
+<tr class="memdesc:a5a877f887d4a32adf29c319dcac2334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca nazwę bryły wzorcowej.  <a href="class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e">Więcej...</a><br /></td></tr>
+<tr class="separator:a5a877f887d4a32adf29c319dcac2334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a50b95a5133b9e03888441843f7e2ba"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba">WezNazwePliku_BrylaFinalna</a> () const</td></tr>
+<tr class="memdesc:a6a50b95a5133b9e03888441843f7e2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca nazwę bryły finalnej.  <a href="class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba">Więcej...</a><br /></td></tr>
+<tr class="separator:a6a50b95a5133b9e03888441843f7e2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705d2ea0d0457f053acb82cb293ed7d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a705d2ea0d0457f053acb82cb293ed7d4">UstawSkale</a> (const <a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;skala)</td></tr>
+<tr class="memdesc:a705d2ea0d0457f053acb82cb293ed7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia ustawienie skali.  <a href="class_bryla_geometryczna.html#a705d2ea0d0457f053acb82cb293ed7d4">Więcej...</a><br /></td></tr>
+<tr class="separator:a705d2ea0d0457f053acb82cb293ed7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631f26a7e921c1ad1a843e6943cfd74f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f">WezPolozenie</a> ()</td></tr>
+<tr class="memdesc:a631f26a7e921c1ad1a843e6943cfd74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia zmianę położenia przez referencję  <a href="class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f">Więcej...</a><br /></td></tr>
+<tr class="separator:a631f26a7e921c1ad1a843e6943cfd74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a706336a992b97986161001a04499d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a4a706336a992b97986161001a04499d1">WezPolozenie</a> () const</td></tr>
+<tr class="memdesc:a4a706336a992b97986161001a04499d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia odczyt położenia.  <a href="class_bryla_geometryczna.html#a4a706336a992b97986161001a04499d1">Więcej...</a><br /></td></tr>
+<tr class="separator:a4a706336a992b97986161001a04499d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fbe07e1de2d2b0913d6d7d39b46ff1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a3fbe07e1de2d2b0913d6d7d39b46ff1a">WezObrys1</a> ()</td></tr>
+<tr class="memdesc:a3fbe07e1de2d2b0913d6d7d39b46ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia modyfikację obrysu minimalnego bryły.  <a href="class_bryla_geometryczna.html#a3fbe07e1de2d2b0913d6d7d39b46ff1a">Więcej...</a><br /></td></tr>
+<tr class="separator:a3fbe07e1de2d2b0913d6d7d39b46ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91338ec143d83a82e1c8378e66d7117e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a91338ec143d83a82e1c8378e66d7117e">WezObrys1</a> () const</td></tr>
+<tr class="memdesc:a91338ec143d83a82e1c8378e66d7117e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia odczyt obrysu minimalnego.  <a href="class_bryla_geometryczna.html#a91338ec143d83a82e1c8378e66d7117e">Więcej...</a><br /></td></tr>
+<tr class="separator:a91338ec143d83a82e1c8378e66d7117e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6416d9953ff7299c2b532fb82763078a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a6416d9953ff7299c2b532fb82763078a">WezObrys2</a> ()</td></tr>
+<tr class="memdesc:a6416d9953ff7299c2b532fb82763078a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia modyfikację obrysu maksymalnego bryły.  <a href="class_bryla_geometryczna.html#a6416d9953ff7299c2b532fb82763078a">Więcej...</a><br /></td></tr>
+<tr class="separator:a6416d9953ff7299c2b532fb82763078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24514132a0b428d866b86bb20ca0acc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a24514132a0b428d866b86bb20ca0acc7">WezObrys2</a> () const</td></tr>
+<tr class="memdesc:a24514132a0b428d866b86bb20ca0acc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umożliwia odczyt obrysu maksymalnego bryły.  <a href="class_bryla_geometryczna.html#a24514132a0b428d866b86bb20ca0acc7">Więcej...</a><br /></td></tr>
+<tr class="separator:a24514132a0b428d866b86bb20ca0acc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aeeca27fa6b98a0d30ff9349f861c2177"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#aeeca27fa6b98a0d30ff9349f861c2177">Nazwa_pliku_BrylaWzorcowa</a></td></tr>
+<tr class="memdesc:aeeca27fa6b98a0d30ff9349f861c2177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plik z którego są pobierane dane.  <a href="class_bryla_geometryczna.html#aeeca27fa6b98a0d30ff9349f861c2177">Więcej...</a><br /></td></tr>
+<tr class="separator:aeeca27fa6b98a0d30ff9349f861c2177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df7ce2b7da013e7de44878b1503735d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a7df7ce2b7da013e7de44878b1503735d">Nazwa_pliku_BrylaFinalna</a></td></tr>
+<tr class="memdesc:a7df7ce2b7da013e7de44878b1503735d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plik do którego są zapisywane zmienione wierzchołki.  <a href="class_bryla_geometryczna.html#a7df7ce2b7da013e7de44878b1503735d">Więcej...</a><br /></td></tr>
+<tr class="separator:a7df7ce2b7da013e7de44878b1503735d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8cdadc75419691a95b55d0459f0abaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#ad8cdadc75419691a95b55d0459f0abaf">Skala</a></td></tr>
+<tr class="memdesc:ad8cdadc75419691a95b55d0459f0abaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skala względem której są przeliczane wierzchołki.  <a href="class_bryla_geometryczna.html#ad8cdadc75419691a95b55d0459f0abaf">Więcej...</a><br /></td></tr>
+<tr class="separator:ad8cdadc75419691a95b55d0459f0abaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a20b977f6b2053528175aa1004986d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a82a20b977f6b2053528175aa1004986d">Polozenie</a></td></tr>
+<tr class="separator:a82a20b977f6b2053528175aa1004986d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183d6491768208b1ef06cf5bd467d15f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bryla_geometryczna.html#a183d6491768208b1ef06cf5bd467d15f">Obrys</a> [2]</td></tr>
+<tr class="separator:a183d6491768208b1ef06cf5bd467d15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Tworzy pojęcie bryły geometrycznej. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00033">33</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ab913be25b5d9bc26a11bc26cd652c1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab913be25b5d9bc26a11bc26cd652c1e5">&#9670;&nbsp;</a></span>BrylaGeometryczna() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BrylaGeometryczna::BrylaGeometryczna </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_brylywzorcowej</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_brylyfinalnej</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy obiekt bryły geometrycznej w zależności od podanych argumentów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nazwa_brylywzorcowej</td><td></td></tr>
+    <tr><td class="paramname">nazwa_brylyfinalnej</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00063">63</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="adf3d75488bd3debeba8a1c6361efdbe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3d75488bd3debeba8a1c6361efdbe8">&#9670;&nbsp;</a></span>BrylaGeometryczna() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BrylaGeometryczna::BrylaGeometryczna </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy domyślny "pusty" obiekt bryły geometrycznej. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00070">70</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="ae222ef3aacdbfef61ed4ca09604e338a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae222ef3aacdbfef61ed4ca09604e338a">&#9670;&nbsp;</a></span>~BrylaGeometryczna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BrylaGeometryczna::~BrylaGeometryczna </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destruktor obiektu <a class="el" href="class_bryla_geometryczna.html" title="Tworzy pojęcie bryły geometrycznej.">BrylaGeometryczna</a>. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00076">76</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ac6bebe1cb6dd8c95547c61059abd080b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bebe1cb6dd8c95547c61059abd080b">&#9670;&nbsp;</a></span>Skaluj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::Skaluj </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Wierz</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skaluje wierzchołek bryły. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Wierz</td><td>podany wierzchołek </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8cpp_source.html#l00005">5</a> pliku <a class="el" href="_bryla_geometryczna_8cpp_source.html">BrylaGeometryczna.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_cgraph.png" border="0" usemap="#class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_cgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_cgraph" id="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_cgraph">
+<area shape="rect" title="Skaluje wierzchołek bryły." alt="" coords="5,39,164,80"/>
+<area shape="rect" href="class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="212,5,396,47"/>
+<area shape="rect" href="class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="225,71,383,112"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_icgraph.png" border="0" usemap="#class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_icgraph" id="class_bryla_geometryczna_ac6bebe1cb6dd8c95547c61059abd080b_icgraph">
+<area shape="rect" title="Skaluje wierzchołek bryły." alt="" coords="697,136,856,177"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="496,5,640,47"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="487,71,649,112"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="487,136,649,177"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="497,201,639,243"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="493,267,643,308"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="260,13,439,39"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="268,104,431,145"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,10,155,37"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,61,167,87"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,111,177,138"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,162,177,189"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,213,212,255"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="261,209,437,235"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="266,274,433,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a705d2ea0d0457f053acb82cb293ed7d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705d2ea0d0457f053acb82cb293ed7d4">&#9670;&nbsp;</a></span>UstawSkale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BrylaGeometryczna::UstawSkale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>skala</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia ustawienie skali. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skala</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00119">119</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_cgraph.png" border="0" usemap="#class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_cgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_cgraph" id="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_cgraph">
+<area shape="rect" title="Umożliwia ustawienie skali." alt="" coords="5,5,164,47"/>
+<area shape="rect" href="class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="212,5,371,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_icgraph" id="class_bryla_geometryczna_a705d2ea0d0457f053acb82cb293ed7d4_icgraph">
+<area shape="rect" title="Umożliwia ustawienie skali." alt="" coords="232,74,391,115"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="49,5,141,32"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="5,56,184,83"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="7,107,183,133"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="11,157,178,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6a50b95a5133b9e03888441843f7e2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a50b95a5133b9e03888441843f7e2ba">&#9670;&nbsp;</a></span>WezNazwePliku_BrylaFinalna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; BrylaGeometryczna::WezNazwePliku_BrylaFinalna </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zwraca nazwę bryły finalnej. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>const std::string&amp; </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00112">112</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba_icgraph" id="class_bryla_geometryczna_a6a50b95a5133b9e03888441843f7e2ba_icgraph">
+<area shape="rect" title="Zwraca nazwę bryły finalnej." alt="" coords="697,136,909,177"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="496,5,640,47"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="487,71,649,112"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="487,136,649,177"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="497,201,639,243"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="493,267,643,308"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="260,13,439,39"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="268,104,431,145"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,10,155,37"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,61,167,87"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,111,177,138"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,162,177,189"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,213,212,255"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="261,209,437,235"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="266,274,433,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a877f887d4a32adf29c319dcac2334e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a877f887d4a32adf29c319dcac2334e">&#9670;&nbsp;</a></span>WezNazwePliku_BrylaWzorcowa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; BrylaGeometryczna::WezNazwePliku_BrylaWzorcowa </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zwraca nazwę bryły wzorcowej. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>const std::string&amp; </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00105">105</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e_icgraph" id="class_bryla_geometryczna_a5a877f887d4a32adf29c319dcac2334e_icgraph">
+<area shape="rect" title="Zwraca nazwę bryły wzorcowej." alt="" coords="697,136,929,177"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="496,5,640,47"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="487,71,649,112"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="487,136,649,177"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="497,201,639,243"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="493,267,643,308"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="260,13,439,39"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="268,104,431,145"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,10,155,37"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,61,167,87"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,111,177,138"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,162,177,189"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,213,212,255"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="261,209,437,235"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="266,274,433,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3fbe07e1de2d2b0913d6d7d39b46ff1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fbe07e1de2d2b0913d6d7d39b46ff1a">&#9670;&nbsp;</a></span>WezObrys1() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&amp; BrylaGeometryczna::WezObrys1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia modyfikację obrysu minimalnego bryły. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D&amp; punkt minimalny </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00141">141</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a3fbe07e1de2d2b0913d6d7d39b46ff1a_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a3fbe07e1de2d2b0913d6d7d39b46ff1a_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a3fbe07e1de2d2b0913d6d7d39b46ff1a_icgraph" id="class_bryla_geometryczna_a3fbe07e1de2d2b0913d6d7d39b46ff1a_icgraph">
+<area shape="rect" title="Umożliwia modyfikację obrysu minimalnego bryły." alt="" coords="540,129,699,170"/>
+<area shape="rect" href="class_plaskowyz.html#a4c98393b8627e49babf084620eaa9145" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="235,5,489,32"/>
+<area shape="rect" href="class_gora_szczyt.html#abb44970bcd910a10be8c8d2f29c68e12" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="233,56,491,83"/>
+<area shape="rect" href="class_gora_grania.html#af69de9ae4a1523fe6a4c96443393a2dd" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="232,107,492,133"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="290,158,434,199"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="291,223,433,265"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="287,289,437,330"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="5,165,184,192"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="7,231,183,257"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="11,296,178,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91338ec143d83a82e1c8378e66d7117e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91338ec143d83a82e1c8378e66d7117e">&#9670;&nbsp;</a></span>WezObrys1() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::WezObrys1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia odczyt obrysu minimalnego. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D położenie obrys minimalny </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00148">148</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="a6416d9953ff7299c2b532fb82763078a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6416d9953ff7299c2b532fb82763078a">&#9670;&nbsp;</a></span>WezObrys2() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&amp; BrylaGeometryczna::WezObrys2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia modyfikację obrysu maksymalnego bryły. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D&amp; punkt minimalny </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00155">155</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a6416d9953ff7299c2b532fb82763078a_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a6416d9953ff7299c2b532fb82763078a_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a6416d9953ff7299c2b532fb82763078a_icgraph" id="class_bryla_geometryczna_a6416d9953ff7299c2b532fb82763078a_icgraph">
+<area shape="rect" title="Umożliwia modyfikację obrysu maksymalnego bryły." alt="" coords="540,129,699,170"/>
+<area shape="rect" href="class_plaskowyz.html#a4c98393b8627e49babf084620eaa9145" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="235,5,489,32"/>
+<area shape="rect" href="class_gora_szczyt.html#abb44970bcd910a10be8c8d2f29c68e12" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="233,56,491,83"/>
+<area shape="rect" href="class_gora_grania.html#af69de9ae4a1523fe6a4c96443393a2dd" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="232,107,492,133"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="290,158,434,199"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="291,223,433,265"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="287,289,437,330"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="5,165,184,192"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="7,231,183,257"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="11,296,178,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a24514132a0b428d866b86bb20ca0acc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24514132a0b428d866b86bb20ca0acc7">&#9670;&nbsp;</a></span>WezObrys2() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::WezObrys2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia odczyt obrysu maksymalnego bryły. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D punkt maksymalny </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00162">162</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="a631f26a7e921c1ad1a843e6943cfd74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631f26a7e921c1ad1a843e6943cfd74f">&#9670;&nbsp;</a></span>WezPolozenie() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&amp; BrylaGeometryczna::WezPolozenie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia zmianę położenia przez referencję </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D położenie </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00126">126</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a631f26a7e921c1ad1a843e6943cfd74f_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a631f26a7e921c1ad1a843e6943cfd74f_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a631f26a7e921c1ad1a843e6943cfd74f_icgraph" id="class_bryla_geometryczna_a631f26a7e921c1ad1a843e6943cfd74f_icgraph">
+<area shape="rect" title="Umożliwia zmianę położenia przez referencję" alt="" coords="1005,297,1164,338"/>
+<area shape="rect" href="class_plaskowyz.html#a4c98393b8627e49babf084620eaa9145" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="700,5,955,32"/>
+<area shape="rect" href="class_gora_szczyt.html#abb44970bcd910a10be8c8d2f29c68e12" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="698,56,957,83"/>
+<area shape="rect" href="class_gora_grania.html#af69de9ae4a1523fe6a4c96443393a2dd" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="697,107,957,133"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,291,155,317"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="260,363,439,389"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="261,245,437,272"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="266,480,433,507"/>
+<area shape="rect" href="class_gora_szczyt.html#a700b0421685ed503093374ee6dff6922" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="724,209,931,250"/>
+<area shape="rect" href="class_gora_grania.html#adedb91449912c9c42df34034f1779559" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="724,326,931,367"/>
+<area shape="rect" href="class_plaskowyz.html#aa699c284eb74c9876e330abc0e12592a" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="727,443,928,485"/>
+<area shape="rect" href="class_prostopadloscian.html#acfc665032bfc36ccf4ed5055910cd049" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="737,626,917,667"/>
+<area shape="rect" href="class_graniastoslup.html#a45c1c2315413184d1357a673b1e38084" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="716,561,939,602"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="497,209,639,250"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="496,326,640,367"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="493,443,643,485"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="487,626,649,667"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="268,561,431,602"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,543,167,569"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,593,177,620"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,644,177,671"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,477,212,518"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="487,561,649,602"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a706336a992b97986161001a04499d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a706336a992b97986161001a04499d1">&#9670;&nbsp;</a></span>WezPolozenie() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::WezPolozenie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia odczyt położenia. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D położenie </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00133">133</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="a8b266277f5b85679f8652708cac1cb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b266277f5b85679f8652708cac1cb4e">&#9670;&nbsp;</a></span>WezSkale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a>&amp; BrylaGeometryczna::WezSkale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia zmianę skali przez referencję </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D&amp; skala </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00091">91</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bryla_geometryczna_a8b266277f5b85679f8652708cac1cb4e_icgraph.png" border="0" usemap="#class_bryla_geometryczna_a8b266277f5b85679f8652708cac1cb4e_icgraph" alt=""/></div>
+<map name="class_bryla_geometryczna_a8b266277f5b85679f8652708cac1cb4e_icgraph" id="class_bryla_geometryczna_a8b266277f5b85679f8652708cac1cb4e_icgraph">
+<area shape="rect" title="Umożliwia zmianę skali przez referencję" alt="" coords="904,140,1063,181"/>
+<area shape="rect" href="class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Skaluje wierzchołek bryły." alt="" coords="697,169,856,211"/>
+<area shape="rect" href="class_bryla_geometryczna.html#a705d2ea0d0457f053acb82cb293ed7d4" title="Umożliwia ustawienie skali." alt="" coords="489,71,647,112"/>
+<area shape="rect" href="class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="496,5,640,47"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="487,267,649,308"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="487,332,649,373"/>
+<area shape="rect" href="class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="497,201,639,243"/>
+<area shape="rect" href="class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="493,136,643,177"/>
+<area shape="rect" href="class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="260,21,439,47"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="268,267,431,308"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,110,155,137"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,362,167,389"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,194,177,221"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,245,177,271"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,296,212,337"/>
+<area shape="rect" href="class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="261,202,437,229"/>
+<area shape="rect" href="class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="266,139,433,166"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe9aa4f6fc142a274baa938503fbe7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9aa4f6fc142a274baa938503fbe7d5">&#9670;&nbsp;</a></span>WezSkale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::WezSkale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Umożliwia odczytanie skali. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor3D skala </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00098">98</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a7df7ce2b7da013e7de44878b1503735d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df7ce2b7da013e7de44878b1503735d">&#9670;&nbsp;</a></span>Nazwa_pliku_BrylaFinalna</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string BrylaGeometryczna::Nazwa_pliku_BrylaFinalna</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plik do którego są zapisywane zmienione wierzchołki. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00046">46</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="aeeca27fa6b98a0d30ff9349f861c2177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeca27fa6b98a0d30ff9349f861c2177">&#9670;&nbsp;</a></span>Nazwa_pliku_BrylaWzorcowa</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string BrylaGeometryczna::Nazwa_pliku_BrylaWzorcowa</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plik z którego są pobierane dane. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00040">40</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="a183d6491768208b1ef06cf5bd467d15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183d6491768208b1ef06cf5bd467d15f">&#9670;&nbsp;</a></span>Obrys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::Obrys[2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00054">54</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="a82a20b977f6b2053528175aa1004986d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a20b977f6b2053528175aa1004986d">&#9670;&nbsp;</a></span>Polozenie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::Polozenie</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00053">53</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<a id="ad8cdadc75419691a95b55d0459f0abaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8cdadc75419691a95b55d0459f0abaf">&#9670;&nbsp;</a></span>Skala</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_wektor_8hh.html#ac353a272b38b4ad342f7181ad7bdb91a">Wektor3D</a> BrylaGeometryczna::Skala</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Skala względem której są przeliczane wierzchołki. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_bryla_geometryczna_8hh_source.html#l00052">52</a> pliku <a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/inc/<a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a></li>
+<li>/home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/src/<a class="el" href="_bryla_geometryczna_8cpp_source.html">BrylaGeometryczna.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_bryla_geometryczna.html">BrylaGeometryczna</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

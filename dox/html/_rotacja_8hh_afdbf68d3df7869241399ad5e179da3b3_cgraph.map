@@ -1,0 +1,8 @@
+<map id="UstawOs" name="UstawOs">
+<area shape="rect" id="node1" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="5,107,85,133"/>
+<area shape="rect" id="node2" href="$_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X." alt="" coords="166,5,233,32"/>
+<area shape="rect" id="node3" href="$_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y." alt="" coords="166,56,233,83"/>
+<area shape="rect" id="node4" href="$_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="166,107,233,133"/>
+<area shape="rect" id="node5" href="$class_rotacja.html#a01ca26c6bd30a36f3ac98c155c0cd14c" title="Funkcja zwracająca kąt obrotu." alt="" coords="133,157,265,184"/>
+<area shape="rect" id="node6" href="$class_rotacja.html#a2d7c424588e26948325aa687434605e9" title="Funkcja zwracająca nazwę osi." alt="" coords="136,208,263,235"/>
+</map>

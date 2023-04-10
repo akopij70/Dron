@@ -1,0 +1,5 @@
+<map id="BrylaGeometryczna::Skaluj" name="BrylaGeometryczna::Skaluj">
+<area shape="rect" id="node1" title="Skaluje wierzchołek bryły." alt="" coords="5,39,164,80"/>
+<area shape="rect" id="node2" href="$class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="212,5,396,47"/>
+<area shape="rect" id="node3" href="$class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="225,71,383,112"/>
+</map>

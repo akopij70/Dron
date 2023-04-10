@@ -1,0 +1,6 @@
+<map id="GoraGrania" name="GoraGrania">
+<area shape="rect" id="node1" title="Towrzy pojęcie Góry z granią" alt="" coords="110,200,206,227"/>
+<area shape="rect" id="node2" href="$class_bryla_geometryczna.html" title="Tworzy pojęcie bryły geometrycznej." alt="" coords="5,124,156,151"/>
+<area shape="rect" id="node3" href="$class_wektor.html" title=" " alt="" coords="105,5,211,32"/>
+<area shape="rect" id="node4" href="$class_element_sceny.html" title="Tworzy pojęcie elementu sceny." alt="" coords="181,124,295,151"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Dron::TransfDoUklWspRodzica" name="Dron::TransfDoUklWspRodzica">
+<area shape="rect" id="node1" title="Transformuje punkt drona do układu sceny." alt="" coords="5,56,224,83"/>
+<area shape="rect" id="node2" href="$_rotacja_8hh.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="314,5,381,32"/>
+<area shape="rect" id="node3" href="$class_dron.html#a4613098046c3c77560bef3ac4f99a709" title="Umożliwia zmianę kąta przez zwrócenie referencji." alt="" coords="292,56,403,83"/>
+<area shape="rect" id="node4" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="272,107,423,133"/>
+</map>

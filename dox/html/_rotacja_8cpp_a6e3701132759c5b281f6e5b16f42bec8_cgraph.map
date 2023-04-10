@@ -1,0 +1,10 @@
+<map id="UstawObrot" name="UstawObrot">
+<area shape="rect" id="node1" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,81,104,108"/>
+<area shape="rect" id="node2" href="$class_macierz.html#a590ea3d5944cb84a05e1579c9d91a49f" title="Tworzy macierz jednostkową" alt="" coords="152,56,373,83"/>
+<area shape="rect" id="node3" href="$_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="223,107,303,133"/>
+<area shape="rect" id="node4" href="$_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X." alt="" coords="454,5,521,32"/>
+<area shape="rect" id="node5" href="$_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y." alt="" coords="454,56,521,83"/>
+<area shape="rect" id="node6" href="$_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="454,107,521,133"/>
+<area shape="rect" id="node7" href="$class_rotacja.html#a01ca26c6bd30a36f3ac98c155c0cd14c" title="Funkcja zwracająca kąt obrotu." alt="" coords="421,157,553,184"/>
+<area shape="rect" id="node8" href="$class_rotacja.html#a2d7c424588e26948325aa687434605e9" title="Funkcja zwracająca nazwę osi." alt="" coords="424,208,551,235"/>
+</map>

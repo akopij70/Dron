@@ -1,0 +1,5 @@
+<map id="GoraGrania::TransfDoUkladuRodzica" name="GoraGrania::TransfDoUkladuRodzica">
+<area shape="rect" id="node1" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="424,5,631,47"/>
+<area shape="rect" id="node2" href="$class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="232,5,376,47"/>
+<area shape="rect" id="node3" href="$class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="5,13,184,39"/>
+</map>

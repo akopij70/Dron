@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Faza 3: Dokumentacja pliku /home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/src/Rotacja.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Faza 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_rotacja_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Rotacja.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_rotacja_8hh_source.html">Rotacja.hh</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Rotacja.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp__incl.png" border="0" usemap="#_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2_rotacja_8cpp" alt=""/></div>
+<map name="_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2_rotacja_8cpp" id="_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2_rotacja_8cpp">
+<area shape="rect" title=" " alt="" coords="72,5,275,61"/>
+<area shape="rect" href="_rotacja_8hh.html" title=" " alt="" coords="128,109,219,136"/>
+<area shape="rect" href="_macierz3x3_8hh.html" title=" " alt="" coords="67,184,184,211"/>
+<area shape="rect" title=" " alt="" coords="5,408,85,435"/>
+<area shape="rect" href="_wektor_8hh.html" title="Ten plik powinien zawierać definicję szablonu Wektor&lt;&gt;" alt="" coords="182,333,269,360"/>
+<area shape="rect" title=" " alt="" coords="259,184,322,211"/>
+<area shape="rect" href="_macierz_8hh.html" title="Ten plik zawiera definicję szablonu Macierz&lt;&gt;" alt="" coords="87,259,180,285"/>
+<area shape="rect" title=" " alt="" coords="111,408,174,435"/>
+<area shape="rect" title=" " alt="" coords="199,408,268,435"/>
+<area shape="rect" title=" " alt="" coords="292,408,367,435"/>
+</map>
+</div>
+</div>
+<p><a href="_rotacja_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a6e3701132759c5b281f6e5b16f42bec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8">UstawObrot</a> (std::vector&lt; <a class="el" href="class_rotacja.html">Rotacja</a> &gt; lista_obrotow)</td></tr>
+<tr class="memdesc:a6e3701132759c5b281f6e5b16f42bec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy.  <a href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8">Więcej...</a><br /></td></tr>
+<tr class="separator:a6e3701132759c5b281f6e5b16f42bec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbf68d3df7869241399ad5e179da3b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3">UstawOs</a> (<a class="el" href="class_rotacja.html">Rotacja</a> Rot)</td></tr>
+<tr class="memdesc:afdbf68d3df7869241399ad5e179da3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot.  <a href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3">Więcej...</a><br /></td></tr>
+<tr class="separator:afdbf68d3df7869241399ad5e179da3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa45d069b18519dd08fa181d5ab300a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5">ObrotX</a> (double kat)</td></tr>
+<tr class="memdesc:afa45d069b18519dd08fa181d5ab300a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X.  <a href="_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5">Więcej...</a><br /></td></tr>
+<tr class="separator:afa45d069b18519dd08fa181d5ab300a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e2f0d899a144ebde69c9db4e011f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a">ObrotY</a> (double kat)</td></tr>
+<tr class="memdesc:ac6e2f0d899a144ebde69c9db4e011f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y.  <a href="_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a">Więcej...</a><br /></td></tr>
+<tr class="separator:ac6e2f0d899a144ebde69c9db4e011f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837f1e325e3236dedd3754b2be2eafb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb">ObrotZ</a> (double kat)</td></tr>
+<tr class="memdesc:ac837f1e325e3236dedd3754b2be2eafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z.  <a href="_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb">Więcej...</a><br /></td></tr>
+<tr class="separator:ac837f1e325e3236dedd3754b2be2eafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41373a030eac9ed0f492a92ec95f42d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_rotacja.html">Rotacja</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#ac41373a030eac9ed0f492a92ec95f42d">Pobierz_dane</a> ()</td></tr>
+<tr class="memdesc:ac41373a030eac9ed0f492a92ec95f42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zbiera dane podawane przez ożytkownika dotyczące sekwencji obrotów i umieszcza je w zwracanym kontenerze.  <a href="_rotacja_8cpp.html#ac41373a030eac9ed0f492a92ec95f42d">Więcej...</a><br /></td></tr>
+<tr class="separator:ac41373a030eac9ed0f492a92ec95f42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b47ee90024b1e0623d1f45727d9fdee"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotacja_8cpp.html#a4b47ee90024b1e0623d1f45727d9fdee">operator&lt;&lt;</a> (std::ostream &amp;Strm, const <a class="el" href="class_rotacja.html">Rotacja</a> &amp;Rot)</td></tr>
+<tr class="memdesc:a4b47ee90024b1e0623d1f45727d9fdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeciążenie operatora &lt;&lt; w cely wyświetlenia danych związanych z rotacją - funkcja wykorzystywana przy testach programu.  <a href="_rotacja_8cpp.html#a4b47ee90024b1e0623d1f45727d9fdee">Więcej...</a><br /></td></tr>
+<tr class="separator:a4b47ee90024b1e0623d1f45727d9fdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="afa45d069b18519dd08fa181d5ab300a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa45d069b18519dd08fa181d5ab300a5">&#9670;&nbsp;</a></span>ObrotX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a> ObrotX </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kat</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Macierz3x3 macierz obrotu </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00058">58</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_afa45d069b18519dd08fa181d5ab300a5_icgraph.png" border="0" usemap="#_rotacja_8cpp_afa45d069b18519dd08fa181d5ab300a5_icgraph" alt=""/></div>
+<map name="_rotacja_8cpp_afa45d069b18519dd08fa181d5ab300a5_icgraph" id="_rotacja_8cpp_afa45d069b18519dd08fa181d5ab300a5_icgraph">
+<area shape="rect" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X." alt="" coords="280,5,347,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="152,5,232,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6e2f0d899a144ebde69c9db4e011f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e2f0d899a144ebde69c9db4e011f6a">&#9670;&nbsp;</a></span>ObrotY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a> ObrotY </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kat</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Macierz3x3 macierz obrotu </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00081">81</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_ac6e2f0d899a144ebde69c9db4e011f6a_icgraph.png" border="0" usemap="#_rotacja_8cpp_ac6e2f0d899a144ebde69c9db4e011f6a_icgraph" alt=""/></div>
+<map name="_rotacja_8cpp_ac6e2f0d899a144ebde69c9db4e011f6a_icgraph" id="_rotacja_8cpp_ac6e2f0d899a144ebde69c9db4e011f6a_icgraph">
+<area shape="rect" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y." alt="" coords="280,5,347,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="152,5,232,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac837f1e325e3236dedd3754b2be2eafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac837f1e325e3236dedd3754b2be2eafb">&#9670;&nbsp;</a></span>ObrotZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a> ObrotZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kat</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Macierz3x3 macierz obrotu </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00104">104</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_ac837f1e325e3236dedd3754b2be2eafb_icgraph.png" border="0" usemap="#_rotacja_8cpp_ac837f1e325e3236dedd3754b2be2eafb_icgraph" alt=""/></div>
+<map name="_rotacja_8cpp_ac837f1e325e3236dedd3754b2be2eafb_icgraph" id="_rotacja_8cpp_ac837f1e325e3236dedd3754b2be2eafb_icgraph">
+<area shape="rect" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="952,144,1019,171"/>
+<area shape="rect" href="class_dron.html#aa90715c86d8ffcf6c0dbe13ec8ec6c06" title="Ustawia ścieżkę w zależności od kąta i długości oraz punktów." alt="" coords="715,5,871,32"/>
+<area shape="rect" href="class_dron.html#a8be799e9c7474b1549e20b92bf121cf5" title="Funkcja tworzy dalszą trasę gdy mogłaby nastąpić kolizja." alt="" coords="694,56,891,83"/>
+<area shape="rect" href="class_prostopadloscian.html#acfc665032bfc36ccf4ed5055910cd049" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="703,107,883,149"/>
+<area shape="rect" href="class_graniastoslup.html#a45c1c2315413184d1357a673b1e38084" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="681,225,904,266"/>
+<area shape="rect" href="class_dron.html#a0517cc1838ab42c77fc304fd073c995d" title="Transformuje punkt drona do układu sceny." alt="" coords="683,173,902,200"/>
+<area shape="rect" href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="753,291,833,317"/>
+<area shape="rect" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="471,134,633,175"/>
+<area shape="rect" href="class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="260,167,423,209"/>
+<area shape="rect" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,73,155,100"/>
+<area shape="rect" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,124,167,151"/>
+<area shape="rect" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,175,177,201"/>
+<area shape="rect" href="class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,225,177,252"/>
+<area shape="rect" href="class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,277,212,318"/>
+<area shape="rect" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="471,199,633,241"/>
+<area shape="rect" href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="503,291,601,317"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b47ee90024b1e0623d1f45727d9fdee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b47ee90024b1e0623d1f45727d9fdee">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>Strm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_rotacja.html">Rotacja</a> &amp;&#160;</td>
+          <td class="paramname"><em>Rot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przeciążenie operatora &lt;&lt; w cely wyświetlenia danych związanych z rotacją - funkcja wykorzystywana przy testach programu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Strm</td><td>strumień </td></tr>
+    <tr><td class="paramname">Rot</td><td>obiekt zawierający informacje o rotacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::ostream&amp; strumień </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00178">178</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_a4b47ee90024b1e0623d1f45727d9fdee_cgraph.png" border="0" usemap="#_rotacja_8cpp_a4b47ee90024b1e0623d1f45727d9fdee_cgraph" alt=""/></div>
+<map name="_rotacja_8cpp_a4b47ee90024b1e0623d1f45727d9fdee_cgraph" id="_rotacja_8cpp_a4b47ee90024b1e0623d1f45727d9fdee_cgraph">
+<area shape="rect" title="Przeciążenie operatora &lt;&lt; w cely wyświetlenia danych związanych z rotacją &#45; funkcja wykorzystywana pr..." alt="" coords="5,31,104,57"/>
+<area shape="rect" href="class_rotacja.html#a01ca26c6bd30a36f3ac98c155c0cd14c" title="Funkcja zwracająca kąt obrotu." alt="" coords="152,5,284,32"/>
+<area shape="rect" href="class_rotacja.html#a2d7c424588e26948325aa687434605e9" title="Funkcja zwracająca nazwę osi." alt="" coords="155,56,281,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac41373a030eac9ed0f492a92ec95f42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41373a030eac9ed0f492a92ec95f42d">&#9670;&nbsp;</a></span>Pobierz_dane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_rotacja.html">Rotacja</a>&gt; Pobierz_dane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zbiera dane podawane przez ożytkownika dotyczące sekwencji obrotów i umieszcza je w zwracanym kontenerze. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;Rotacja&gt; kontener z informacjami o obtotach </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00127">127</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_ac41373a030eac9ed0f492a92ec95f42d_cgraph.png" border="0" usemap="#_rotacja_8cpp_ac41373a030eac9ed0f492a92ec95f42d_cgraph" alt=""/></div>
+<map name="_rotacja_8cpp_ac41373a030eac9ed0f492a92ec95f42d_cgraph" id="_rotacja_8cpp_ac41373a030eac9ed0f492a92ec95f42d_cgraph">
+<area shape="rect" title="Funkcja zbiera dane podawane przez ożytkownika dotyczące sekwencji obrotów i umieszcza je w zwracanym..." alt="" coords="5,31,115,57"/>
+<area shape="rect" href="class_rotacja.html#ab81d8541d2ced98dbd1ae92df8531ec9" title="Funkcja umożliwiająca modyfikację kąta." alt="" coords="163,5,333,32"/>
+<area shape="rect" href="class_rotacja.html#ac62c5b802b8c7a216ab1ec6cc3b87e45" title="Funkcja umożliwiająca modyfikację osi." alt="" coords="165,56,331,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e3701132759c5b281f6e5b16f42bec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3701132759c5b281f6e5b16f42bec8">&#9670;&nbsp;</a></span>UstawObrot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a> UstawObrot </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_rotacja.html">Rotacja</a> &gt;&#160;</td>
+          <td class="paramname"><em>lista_obrotow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista_obrotow</td><td>kontener zawierający macierze obrotu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Macierz3x3 finalna macierz obrotu </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00010">10</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_a6e3701132759c5b281f6e5b16f42bec8_cgraph.png" border="0" usemap="#_rotacja_8cpp_a6e3701132759c5b281f6e5b16f42bec8_cgraph" alt=""/></div>
+<map name="_rotacja_8cpp_a6e3701132759c5b281f6e5b16f42bec8_cgraph" id="_rotacja_8cpp_a6e3701132759c5b281f6e5b16f42bec8_cgraph">
+<area shape="rect" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,81,104,108"/>
+<area shape="rect" href="class_macierz.html#a590ea3d5944cb84a05e1579c9d91a49f" title="Tworzy macierz jednostkową" alt="" coords="152,56,373,83"/>
+<area shape="rect" href="_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="223,107,303,133"/>
+<area shape="rect" href="_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X." alt="" coords="454,5,521,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y." alt="" coords="454,56,521,83"/>
+<area shape="rect" href="_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="454,107,521,133"/>
+<area shape="rect" href="class_rotacja.html#a01ca26c6bd30a36f3ac98c155c0cd14c" title="Funkcja zwracająca kąt obrotu." alt="" coords="421,157,553,184"/>
+<area shape="rect" href="class_rotacja.html#a2d7c424588e26948325aa687434605e9" title="Funkcja zwracająca nazwę osi." alt="" coords="424,208,551,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdbf68d3df7869241399ad5e179da3b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbf68d3df7869241399ad5e179da3b3">&#9670;&nbsp;</a></span>UstawOs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macierz3x3_8hh.html#ad4fc7b0e263d9a99ba6174f68b52ea87">Macierz3x3</a> UstawOs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rotacja.html">Rotacja</a>&#160;</td>
+          <td class="paramname"><em>Rot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Rot</td><td>obiekt zawierający informację o osi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Macierz3x3 macierz obrotu </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_rotacja_8cpp_source.html#l00028">28</a> pliku <a class="el" href="_rotacja_8cpp_source.html">Rotacja.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_cgraph.png" border="0" usemap="#_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_cgraph" alt=""/></div>
+<map name="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_cgraph" id="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_cgraph">
+<area shape="rect" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="5,107,85,133"/>
+<area shape="rect" href="_rotacja_8cpp.html#afa45d069b18519dd08fa181d5ab300a5" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi X." alt="" coords="166,5,233,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#ac6e2f0d899a144ebde69c9db4e011f6a" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Y." alt="" coords="166,56,233,83"/>
+<area shape="rect" href="_rotacja_8cpp.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="166,107,233,133"/>
+<area shape="rect" href="class_rotacja.html#a01ca26c6bd30a36f3ac98c155c0cd14c" title="Funkcja zwracająca kąt obrotu." alt="" coords="133,157,265,184"/>
+<area shape="rect" href="class_rotacja.html#a2d7c424588e26948325aa687434605e9" title="Funkcja zwracająca nazwę osi." alt="" coords="136,208,263,235"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_icgraph.png" border="0" usemap="#_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_icgraph" alt=""/></div>
+<map name="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_icgraph" id="_rotacja_8cpp_afdbf68d3df7869241399ad5e179da3b3_icgraph">
+<area shape="rect" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="152,5,232,32"/>
+<area shape="rect" href="_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_400757c3a0df52e783ed9699284f29ce.html">src</a></li><li class="navelem"><a class="el" href="_rotacja_8cpp.html">Rotacja.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

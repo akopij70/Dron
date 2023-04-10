@@ -1,0 +1,10 @@
+<map id="Graniastoslup::TransfDoUkladuRodzica" name="Graniastoslup::TransfDoUkladuRodzica">
+<area shape="rect" id="node1" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="681,99,904,141"/>
+<area shape="rect" id="node2" href="$class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="471,99,633,141"/>
+<area shape="rect" id="node3" href="$class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="260,99,423,141"/>
+<area shape="rect" id="node4" href="$class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,5,155,32"/>
+<area shape="rect" id="node5" href="$class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,56,167,83"/>
+<area shape="rect" id="node6" href="$class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,107,177,133"/>
+<area shape="rect" id="node7" href="$class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,157,177,184"/>
+<area shape="rect" id="node8" href="$class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,209,212,250"/>
+</map>

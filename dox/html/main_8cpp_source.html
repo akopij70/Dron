@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Faza 3: Plik źródłowy /home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Faza 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_wektor_8hh.html">Wektor.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_macierz_8hh.html">Macierz.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_macierz3x3_8hh.html">Macierz3x3.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rotacja_8hh.html">Rotacja.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graniastoslup_8hh.html">Graniastoslup.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bryla_geometryczna_8hh.html">BrylaGeometryczna.hh</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_prostopadloscian_8hh.html">Prostopadloscian.hh</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dron_8hh.html">Dron.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_scena_8hh.html">Scena.hh</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">MenuPrzeszkod</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//void Kontrola_odczytu_liczby_dronow(int &amp;dana);</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">Kontrola_odczytu_indeksu_przeszkody</a>(<span class="keywordtype">int</span> &amp;dana);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">Kontrola_przy_usuwaniu</a>(<span class="keywordtype">int</span> &amp;dana, <span class="keywordtype">int</span> &amp;limit);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   27</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_scena.html">Scena</a> Tytan;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> numer_drona = -1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">int</span> numer_przeszkody;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">int</span> idx_przeszkody, limit_przeszkod;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  idx_przeszkody = limit_przeszkod = 5;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">char</span> wybor = <span class="charliteral">&#39;x&#39;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_wektor.html">Wektor3D</a> skala, polozenie;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">string</span> plik_przeszkoda;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">while</span> (wybor != <span class="charliteral">&#39;k&#39;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;\nTwoj wybor? (m-menu)&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    cin &gt;&gt; wybor;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">switch</span> (wybor)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        Tytan.<a class="code" href="class_scena.html#a4016f6fdd081bab5dc29741b1f31436a">WezDrona1</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        numer_drona = 1;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (numer_drona == -1)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          cout &lt;&lt; <span class="stringliteral">&quot;Najpierw wybierz aktywnego drona&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Tytan.<a class="code" href="class_scena.html#ab3c6583030ea463bfd0a3498289f94c8">UzyjDrona1</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;k&#39;</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Do widzenia\n&quot;</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">MenuPrzeszkod</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        cin &gt;&gt; numer_przeszkody;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">Kontrola_odczytu_indeksu_przeszkody</a>(numer_przeszkody);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Podaj skale kolejno wzdluz osi OX, OY, OZ:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        cin &gt;&gt; skala;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        skala.<a class="code" href="class_wektor.html#a21053fb076b6443343429ecfc97455cd">Kontrola_odczytu_wektora</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Podaj polozenie przeszkody (x, y, z)&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        cin &gt;&gt; polozenie;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        polozenie.<a class="code" href="class_wektor.html#a21053fb076b6443343429ecfc97455cd">Kontrola_odczytu_wektora</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ++idx_przeszkody;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ++limit_przeszkod;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        plik_przeszkoda = <a class="code" href="_bryla_geometryczna_8hh.html#a133095b70459eec633d33f75d94a1e5c">PRZESZKODA</a> + to_string(idx_przeszkody) + <span class="stringliteral">&quot;.dat&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        Tytan.<a class="code" href="class_scena.html#a75d557edef5ded0328fc084c644e290d">DodajPrzeszkode</a>(numer_przeszkody, <a class="code" href="_bryla_geometryczna_8hh.html#ae92aa321c4dfe9fe8584397313e6365c">PLIK_ROBOCZY_PRZESZKODA</a>, plik_przeszkoda.c_str(), skala, polozenie);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        Tytan.<a class="code" href="class_scena.html#a4f12c98efdffe43e97b66b152db0a563">WyswietPrzeszkody</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Co usunac? Podaj numer:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        cin &gt;&gt; numer_przeszkody;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">Kontrola_przy_usuwaniu</a>(numer_przeszkody, limit_przeszkod);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        Tytan.<a class="code" href="class_scena.html#ac46eba52b4bcc088b2bcf2e5628a530d">UsunPrzeszkode</a>(numer_przeszkody);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        --limit_przeszkod;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Nie rozpoznano polecenia\n&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">   96</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a>()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;a - wybierz aktywnego drona&quot;</span> &lt;&lt; endl </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;p - zadaj parametry przelotu&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;m - wyswietl menu&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;k - koniec dzialania programu&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;d - dodaj element powierzchni&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;u - usun element powierzchni&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">MenuPrzeszkod</a>()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Wybierz przeszkode: &quot;</span> &lt;&lt; endl </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;0 - Plaskowyz&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;1 - Gora z grania&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;2 - Gora z ostrym sztytem&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">/*void Kontrola_odczytu_liczby_dronow(int &amp;dana)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">  while (cin.fail() || dana &gt; ILOSC_DRONOW) </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">    cerr &lt;&lt; &quot;Niepoprawny zapis, sprobuj jeszcze raz: &quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">    cin.clear();</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">    cin.ignore(10000, &#39;\n&#39;);</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">    cin &gt;&gt; dana;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">}*/</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">Kontrola_odczytu_indeksu_przeszkody</a>(<span class="keywordtype">int</span> &amp;dana)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">while</span> (cin.fail() || dana &gt; 2 || dana &lt; 0) </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    cerr &lt;&lt; <span class="stringliteral">&quot;Niepoprawny zapis, sprobuj jeszcze raz: &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    cin.clear();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    cin.ignore(10000, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    cin &gt;&gt; dana;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">  136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">Kontrola_przy_usuwaniu</a>(<span class="keywordtype">int</span> &amp;dana, <span class="keywordtype">int</span> &amp;limit)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Ilosc przeszkod przed usunieciem: &quot;</span> &lt;&lt; limit &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">while</span> (cin.fail() || dana &gt; limit || dana &lt; 1) </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    cerr &lt;&lt; <span class="stringliteral">&quot;Niepoprawny zapis, sprobuj jeszcze raz: &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    cin.clear();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    cin.ignore(10000, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    cin &gt;&gt; dana;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">  147</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a>()</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Aktualna ilosc obiektow Wektor3D: &quot;</span> &lt;&lt; <a class="code" href="class_wektor.html#aeec7ff86aa3b7fc086b76373b897813c">Wektor3D::WezAktualna_ilosc</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Ogolna ilosc obiektow Wektor3D: &quot;</span> &lt;&lt; <a class="code" href="class_wektor.html#adb2cc0589dd4bece4f86dfc0bce63dce">Wektor3D::WezOgolna_ilosc</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="a_prostopadloscian_8hh_html"><div class="ttname"><a href="_prostopadloscian_8hh.html">Prostopadloscian.hh</a></div></div>
+<div class="ttc" id="a_wektor_8hh_html"><div class="ttname"><a href="_wektor_8hh.html">Wektor.hh</a></div><div class="ttdoc">Ten plik powinien zawierać definicję szablonu Wektor&lt;&gt;</div></div>
+<div class="ttc" id="a_macierz_8hh_html"><div class="ttname"><a href="_macierz_8hh.html">Macierz.hh</a></div><div class="ttdoc">Ten plik zawiera definicję szablonu Macierz&lt;&gt;</div></div>
+<div class="ttc" id="a_macierz3x3_8hh_html"><div class="ttname"><a href="_macierz3x3_8hh.html">Macierz3x3.hh</a></div></div>
+<div class="ttc" id="a_bryla_geometryczna_8hh_html"><div class="ttname"><a href="_bryla_geometryczna_8hh.html">BrylaGeometryczna.hh</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ad128e8b0649a121fc46b2fcf26d1e6b3"><div class="ttname"><a href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a></div><div class="ttdeci">void IloscWektorow()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00147">main.cpp:147</a></div></div>
+<div class="ttc" id="a_rotacja_8hh_html"><div class="ttname"><a href="_rotacja_8hh.html">Rotacja.hh</a></div></div>
+<div class="ttc" id="aclass_scena_html_a75d557edef5ded0328fc084c644e290d"><div class="ttname"><a href="class_scena.html#a75d557edef5ded0328fc084c644e290d">Scena::DodajPrzeszkode</a></div><div class="ttdeci">void DodajPrzeszkode(int idx, const std::string &amp;wzorzec, const std::string &amp;final, const Wektor3D &amp;skala, const Wektor3D &amp;polozenie)</div><div class="ttdoc">Funkcja umożliwiwająca wzięcie danego drona.</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8cpp_source.html#l00106">Scena.cpp:106</a></div></div>
+<div class="ttc" id="aclass_scena_html_a4016f6fdd081bab5dc29741b1f31436a"><div class="ttname"><a href="class_scena.html#a4016f6fdd081bab5dc29741b1f31436a">Scena::WezDrona1</a></div><div class="ttdeci">void WezDrona1()</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8cpp_source.html#l00186">Scena.cpp:186</a></div></div>
+<div class="ttc" id="a_dron_8hh_html"><div class="ttname"><a href="_dron_8hh.html">Dron.hh</a></div></div>
+<div class="ttc" id="a_graniastoslup_8hh_html"><div class="ttname"><a href="_graniastoslup_8hh.html">Graniastoslup.hh</a></div></div>
+<div class="ttc" id="aclass_scena_html_ac46eba52b4bcc088b2bcf2e5628a530d"><div class="ttname"><a href="class_scena.html#ac46eba52b4bcc088b2bcf2e5628a530d">Scena::UsunPrzeszkode</a></div><div class="ttdeci">void UsunPrzeszkode(int idx)</div><div class="ttdoc">Usuwa przeszkodę</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8cpp_source.html#l00135">Scena.cpp:135</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00027">main.cpp:27</a></div></div>
+<div class="ttc" id="a_bryla_geometryczna_8hh_html_a133095b70459eec633d33f75d94a1e5c"><div class="ttname"><a href="_bryla_geometryczna_8hh.html#a133095b70459eec633d33f75d94a1e5c">PRZESZKODA</a></div><div class="ttdeci">#define PRZESZKODA</div><div class="ttdef"><b>Definition:</b> <a href="_bryla_geometryczna_8hh_source.html#l00026">BrylaGeometryczna.hh:26</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a57f452299852ea7e03926bf6e0c2648f"><div class="ttname"><a href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">Kontrola_przy_usuwaniu</a></div><div class="ttdeci">void Kontrola_przy_usuwaniu(int &amp;dana, int &amp;limit)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00136">main.cpp:136</a></div></div>
+<div class="ttc" id="alacze__do__gnuplota_8hh_html"><div class="ttname"><a href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a></div></div>
+<div class="ttc" id="aclass_wektor_html_aeec7ff86aa3b7fc086b76373b897813c"><div class="ttname"><a href="class_wektor.html#aeec7ff86aa3b7fc086b76373b897813c">Wektor::WezAktualna_ilosc</a></div><div class="ttdeci">static unsigned int &amp; WezAktualna_ilosc()</div><div class="ttdef"><b>Definition:</b> <a href="_wektor_8hh_source.html#l00110">Wektor.hh:110</a></div></div>
+<div class="ttc" id="aclass_wektor_html"><div class="ttname"><a href="class_wektor.html">Wektor&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_wektor_html_a21053fb076b6443343429ecfc97455cd"><div class="ttname"><a href="class_wektor.html#a21053fb076b6443343429ecfc97455cd">Wektor::Kontrola_odczytu_wektora</a></div><div class="ttdeci">void Kontrola_odczytu_wektora()</div><div class="ttdoc">Sprawdza czy udało się poprawnie wczytać współrzędne wektora.</div><div class="ttdef"><b>Definition:</b> <a href="_wektor_8hh_source.html#l00227">Wektor.hh:227</a></div></div>
+<div class="ttc" id="a_bryla_geometryczna_8hh_html_ae92aa321c4dfe9fe8584397313e6365c"><div class="ttname"><a href="_bryla_geometryczna_8hh.html#ae92aa321c4dfe9fe8584397313e6365c">PLIK_ROBOCZY_PRZESZKODA</a></div><div class="ttdeci">#define PLIK_ROBOCZY_PRZESZKODA</div><div class="ttdef"><b>Definition:</b> <a href="_bryla_geometryczna_8hh_source.html#l00016">BrylaGeometryczna.hh:16</a></div></div>
+<div class="ttc" id="aclass_scena_html"><div class="ttname"><a href="class_scena.html">Scena</a></div><div class="ttdoc">Tworzy pojęcie sceny(planety)</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8hh_source.html#l00013">Scena.hh:13</a></div></div>
+<div class="ttc" id="aclass_wektor_html_adb2cc0589dd4bece4f86dfc0bce63dce"><div class="ttname"><a href="class_wektor.html#adb2cc0589dd4bece4f86dfc0bce63dce">Wektor::WezOgolna_ilosc</a></div><div class="ttdeci">static unsigned int &amp; WezOgolna_ilosc()</div><div class="ttdef"><b>Definition:</b> <a href="_wektor_8hh_source.html#l00111">Wektor.hh:111</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a4516ae6d4db49f38c56069c35b41f492"><div class="ttname"><a href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">Kontrola_odczytu_indeksu_przeszkody</a></div><div class="ttdeci">void Kontrola_odczytu_indeksu_przeszkody(int &amp;dana)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00125">main.cpp:125</a></div></div>
+<div class="ttc" id="aclass_scena_html_a4f12c98efdffe43e97b66b152db0a563"><div class="ttname"><a href="class_scena.html#a4f12c98efdffe43e97b66b152db0a563">Scena::WyswietPrzeszkody</a></div><div class="ttdeci">void WyswietPrzeszkody()</div><div class="ttdoc">Wyświetla istniejące przeszkody.</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8cpp_source.html#l00125">Scena.cpp:125</a></div></div>
+<div class="ttc" id="aclass_scena_html_ab3c6583030ea463bfd0a3498289f94c8"><div class="ttname"><a href="class_scena.html#ab3c6583030ea463bfd0a3498289f94c8">Scena::UzyjDrona1</a></div><div class="ttdeci">void UzyjDrona1()</div><div class="ttdef"><b>Definition:</b> <a href="_scena_8cpp_source.html#l00220">Scena.cpp:220</a></div></div>
+<div class="ttc" id="a_scena_8hh_html"><div class="ttname"><a href="_scena_8hh.html">Scena.hh</a></div></div>
+<div class="ttc" id="amain_8cpp_html_afdf1ca9e7afc3e7ec41b47fea4b3d80d"><div class="ttname"><a href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a></div><div class="ttdeci">void Menu()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00096">main.cpp:96</a></div></div>
+<div class="ttc" id="amain_8cpp_html_afb0bf1e6eff0616f13f450a7f2919c1f"><div class="ttname"><a href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">MenuPrzeszkod</a></div><div class="ttdeci">void MenuPrzeszkod()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00106">main.cpp:106</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_400757c3a0df52e783ed9699284f29ce.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

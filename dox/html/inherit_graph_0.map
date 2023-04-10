@@ -1,0 +1,10 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_bryla_geometryczna.html" title="Tworzy pojęcie bryły geometrycznej." alt="" coords="5,157,156,184"/>
+<area shape="rect" id="node2" href="$class_gora_grania.html" title="Towrzy pojęcie Góry z granią" alt="" coords="223,56,319,83"/>
+<area shape="rect" id="node3" href="$class_gora_szczyt.html" title="Towrzy pojęcie Góry z ostrym szczytem." alt="" coords="223,107,318,133"/>
+<area shape="rect" id="node4" href="$class_graniastoslup.html" title="Tworzy pojęcie graniastosłupa." alt="" coords="215,208,327,235"/>
+<area shape="rect" id="node5" href="$class_plaskowyz.html" title="Towrzy pojęcie Płaskowyżu." alt="" coords="225,157,316,184"/>
+<area shape="rect" id="node6" href="$class_prostopadloscian.html" title="Tworzy pojęcie prostopadłościanu." alt="" coords="204,259,337,285"/>
+<area shape="rect" id="node7" href="$class_element_sceny.html" title="Tworzy pojęcie elementu sceny." alt="" coords="23,81,138,108"/>
+<area shape="rect" id="node8" href="$class_dron.html" title="Tworzy pojęcie drona." alt="" coords="244,5,297,32"/>
+</map>

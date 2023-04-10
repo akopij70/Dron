@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Faza 3: Plik źródłowy /home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/inc/Dron.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Faza 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_dron_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dron.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_dron_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DRON_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DRON_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_element_sceny_8hh.html">ElementSceny.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a9f5ca209b61eae19f489e3af0ab5637d">   10</a></span>&#160;<span class="preprocessor">#define ILOSC_ROTOROW 4</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a567b5efa300c308fcd7e8d89ccec7673">   11</a></span>&#160;<span class="preprocessor">#define SKOK_OBROTU_ROTOROW_stopnie  5</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_dron_8hh.html#af11dbb6cfb46f447c0ada9cd121d65da">   12</a></span>&#160;<span class="preprocessor">#define WYSOKOSC_LOTU 40</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a50c82020ad179407cf91bde1cd3b56f1">   13</a></span>&#160;<span class="preprocessor">#define DLUGOSC_LOTU 50</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a346a5da43df2b2a2038e95c893ccb129">   14</a></span>&#160;<span class="preprocessor">#define PLIK_TRASY_PRZELOTU &quot;dat/trasa_przelotu.dat&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a6cd8adfa6f7b9e9a716a8f12fd543186">   15</a></span>&#160;<span class="preprocessor">#define PLIK_Z_KORPUSEM &quot;dat/Korpus&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a2e17e1fca2ca9098131d5142e1cc4b9e">   16</a></span>&#160;<span class="preprocessor">#define PLIK_Z_ROTOREM1 &quot;dat/Rotor1&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_dron_8hh.html#aff4e7c3076e0ccf852bf8c987f1bd6a3">   17</a></span>&#160;<span class="preprocessor">#define PLIK_Z_ROTOREM2 &quot;dat/Rotor2&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a89862ca346800e8bce50ca8751506b48">   18</a></span>&#160;<span class="preprocessor">#define PLIK_Z_ROTOREM3 &quot;dat/Rotor3&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_dron_8hh.html#a484c25b7d27196dc9575f4ad487e3102">   19</a></span>&#160;<span class="preprocessor">#define PLIK_Z_ROTOREM4 &quot;dat/Rotor4&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_dron_8hh.html#ab6a98b3fca31b4358ac354dfb6626db4">   20</a></span>&#160;<span class="preprocessor">#define STALA_DO_PROMIENIA 1.5</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_dron.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dron.html">Dron</a> : <span class="keyword">public</span> <a class="code" href="class_element_sceny.html">ElementSceny</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_dron.html#ab68c16525e3011cb70f477cd7a73b972">   33</a></span>&#160;    <a class="code" href="class_wektor.html">Wektor3D</a> <a class="code" href="class_dron.html#ab68c16525e3011cb70f477cd7a73b972">Polozenie</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_dron.html#af845587fddb32c14b1998a884f1aa2b7">   39</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_dron.html#af845587fddb32c14b1998a884f1aa2b7">Kat_Orientacji</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_dron.html#a20e613a519fbff8b7561325a1b965171">   45</a></span>&#160;    <a class="code" href="class_prostopadloscian.html">Prostopadloscian</a> <a class="code" href="class_dron.html#a20e613a519fbff8b7561325a1b965171">Korpus</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_dron.html#acf8daf2f4d453c301cbacba50b7c5a14">   51</a></span>&#160;    <a class="code" href="class_graniastoslup.html">Graniastoslup</a> <a class="code" href="class_dron.html#acf8daf2f4d453c301cbacba50b7c5a14">RotorDrona</a>[<a class="code" href="_dron_8hh.html#a9f5ca209b61eae19f489e3af0ab5637d">ILOSC_ROTOROW</a>];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_dron.html#aa88f09d4280b6455f0cdbe5ff5f41599">   58</a></span>&#160;    <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> <a class="code" href="class_dron.html#aa88f09d4280b6455f0cdbe5ff5f41599">Lacze_dron</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">   59</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Promien</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da">Oblicz_i_Zapisz_WspGlbRotora</a>(<span class="keyword">const</span> <a class="code" href="class_graniastoslup.html">Graniastoslup</a>&amp; Rotor) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#ae15081ea15c136463912826f3c2fb79b">Oblicz_i_Zapisz_WspGlbKorpusu</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//protected:</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//Wektor3D TransfDoUklRodzica(const Wektor3D)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed">Dron</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed">Dron</a>(<a class="code" href="class_wektor.html">Wektor3D</a> pol, std::string nazwa);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8">  100</a></span>&#160;    <a class="code" href="class_wektor.html">Wektor3D</a>&amp; <a class="code" href="class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8">WezPolozenie</a>() {<span class="keywordflow">return</span> <a class="code" href="class_dron.html#ab68c16525e3011cb70f477cd7a73b972">Polozenie</a>;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_dron.html#a08295b2f17cb6abaaefe9cb5bb3b95a5">  107</a></span>&#160;    <a class="code" href="class_wektor.html">Wektor3D</a> <a class="code" href="class_dron.html#a08295b2f17cb6abaaefe9cb5bb3b95a5">WezPolozenie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_dron.html#ab68c16525e3011cb70f477cd7a73b972">Polozenie</a>;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_dron.html#a4613098046c3c77560bef3ac4f99a709">  114</a></span>&#160;    <span class="keywordtype">double</span>&amp; <a class="code" href="class_dron.html#a4613098046c3c77560bef3ac4f99a709">WezKat</a>(){<span class="keywordflow">return</span> <a class="code" href="class_dron.html#af845587fddb32c14b1998a884f1aa2b7">Kat_Orientacji</a>;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_dron.html#ac945c1ec4d2fc338298e335d11c6dddf">  121</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_dron.html#ac945c1ec4d2fc338298e335d11c6dddf">WezKat</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_dron.html#af845587fddb32c14b1998a884f1aa2b7">Kat_Orientacji</a>;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#aa90715c86d8ffcf6c0dbe13ec8ec6c06">Planuj_sciezke</a>(<span class="keywordtype">double</span> Kat_skretu, <span class="keywordtype">double</span> Dlugosc_lotu, std::vector&lt;Wektor3D&gt;&amp; punkty);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165">PionowyLot</a>(<span class="keywordtype">double</span> Dlugosc_lotu, <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a>&amp; Lacze);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#ab2a049e5f84be7b0c885f0a13ce17b3c">PoziomyLot</a>(<span class="keywordtype">double</span> Dlugosc_lotu, <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a>&amp; Lacze);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#ab2a049e5f84be7b0c885f0a13ce17b3c">PoziomyLot</a>(std::vector&lt;Wektor3D&gt;&amp; punkty, <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a>&amp; Lacze);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246">ObrotLot</a>(<span class="keywordtype">double</span> Kat, <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a>&amp; Lacze);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#affc909926cb888b98c5ee96061bb444f">Oblicz_i_Zapisz_WspGlbDrona</a>();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dron.html#af242b4ec503890ecaa71e6fbc1b58fec">ObracajRotorami</a>();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="class_dron.html#a6fba59c6e0917ba92c32d2ca76772ecb">  193</a></span>&#160;    <a class="code" href="class_prostopadloscian.html">Prostopadloscian</a> <a class="code" href="class_dron.html#a6fba59c6e0917ba92c32d2ca76772ecb">WezKorpus</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="class_dron.html#a20e613a519fbff8b7561325a1b965171">Korpus</a>;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_dron.html#a4ad9b8277ef0a4318a69bf49b68920ee">  201</a></span>&#160;    <a class="code" href="class_graniastoslup.html">Graniastoslup</a> <a class="code" href="class_dron.html#a4ad9b8277ef0a4318a69bf49b68920ee">WezRotor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="class_dron.html#acf8daf2f4d453c301cbacba50b7c5a14">RotorDrona</a>[i];}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="class_wektor.html">Wektor3D</a> <a class="code" href="class_dron.html#a0517cc1838ab42c77fc304fd073c995d">TransfDoUklWspRodzica</a>(<span class="keyword">const</span> <a class="code" href="class_wektor.html">Wektor3D</a> &amp;wek) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e">  216</a></span>&#160;    <span class="keywordtype">double</span>&amp; <a class="code" href="class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e">WezPromien</a>() {<span class="keywordflow">return</span> <a class="code" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Promien</a>;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="class_dron.html#af11dde852929625ae6ddb0acbab3f36d">  223</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_dron.html#af11dde852929625ae6ddb0acbab3f36d">WezPromien</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Promien</a>;}</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    </div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="class_dron.html#afd8fb90124181ef3412a8674a89cbe17">  230</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_dron.html#afd8fb90124181ef3412a8674a89cbe17">NazwaTypu</a>()<span class="keyword"> const override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;Dron&quot;</span>;}</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="class_dron.html#a3d7aae97bb115ad154b5168bb7ecc460">  237</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_wektor.html">Wektor3D</a> <a class="code" href="class_dron.html#a3d7aae97bb115ad154b5168bb7ecc460">PobierzPolozenie</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> (*this).WezPolozenie();}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#a74d9840a80d626e272cc32cb8ea56e6c">CzyMoznaLadowac</a>(<span class="keyword">const</span> std::list &lt;std::shared_ptr&lt;ElementSceny&gt;&gt; &amp;ElementySceny) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    </div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_dron.html#a683b95aafde4ca2d658343010ddc9252">  256</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#a683b95aafde4ca2d658343010ddc9252">CzyObrysyNakladajaSie</a>(<a class="code" href="class_wektor.html">Wektor3D</a> pol, <span class="keywordtype">double</span> promien)<span class="keyword"> const override </span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="class_wektor.html">Wektor3D</a> Polozenie_elementu = <a class="code" href="class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8">WezPolozenie</a>();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordtype">double</span> pkt1 = Polozenie_elementu[0] - pol[0];</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordtype">double</span> pkt2 = Polozenie_elementu[1] - pol[1];</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordtype">double</span> odleglosc = sqrt(pow(pkt1, 2) + pow(pkt2, 2));</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">double</span> suma_promieni = <a class="code" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Promien</a> + promien;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">//std::cout &lt;&lt; &quot;LIZCZYMY\n&quot;;</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">if</span>(odleglosc == 0) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">if</span>(odleglosc &gt;= suma_promieni) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        std::cout &lt;&lt; pkt2 &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; pkt1 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <a class="code" href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Promien</a> &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; promien &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        std::cout &lt;&lt; odleglosc &lt;&lt;std::endl;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dron.html#a212031206db1cfb5579e0021992ec2cf">ObliczPromien</a>(<a class="code" href="class_wektor.html">Wektor3D</a> punkt);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#a8be799e9c7474b1549e20b92bf121cf5">PlanujZmianeSciezki</a>(<span class="keywordtype">double</span> Kat_skretu, <span class="keywordtype">double</span> Dlugosc_lotu, std::vector&lt;Wektor3D&gt;&amp; punkty);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dron.html#acff319f5313ad414881ba041caded67d">PoziomyLotPoZmianieSciezki</a>(std::vector&lt;Wektor3D&gt;&amp; punkty, <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a>&amp; Lacze);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;};</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_dron_html_a3d7aae97bb115ad154b5168bb7ecc460"><div class="ttname"><a href="class_dron.html#a3d7aae97bb115ad154b5168bb7ecc460">Dron::PobierzPolozenie</a></div><div class="ttdeci">virtual Wektor3D PobierzPolozenie() const</div><div class="ttdoc">Metoda wirtualna do odczytu położenia obiektu.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00237">Dron.hh:237</a></div></div>
+<div class="ttc" id="aclass_dron_html_a0517cc1838ab42c77fc304fd073c995d"><div class="ttname"><a href="class_dron.html#a0517cc1838ab42c77fc304fd073c995d">Dron::TransfDoUklWspRodzica</a></div><div class="ttdeci">Wektor3D TransfDoUklWspRodzica(const Wektor3D &amp;wek) const</div><div class="ttdoc">Transformuje punkt drona do układu sceny.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00362">Dron.cpp:362</a></div></div>
+<div class="ttc" id="aclass_dron_html_a426218a8cc4de61b2bac171f54ec4d3e"><div class="ttname"><a href="class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e">Dron::WezPromien</a></div><div class="ttdeci">double &amp; WezPromien()</div><div class="ttdoc">Umożliwia modyfikację promienia.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00216">Dron.hh:216</a></div></div>
+<div class="ttc" id="aclass_dron_html_aa90715c86d8ffcf6c0dbe13ec8ec6c06"><div class="ttname"><a href="class_dron.html#aa90715c86d8ffcf6c0dbe13ec8ec6c06">Dron::Planuj_sciezke</a></div><div class="ttdeci">bool Planuj_sciezke(double Kat_skretu, double Dlugosc_lotu, std::vector&lt; Wektor3D &gt; &amp;punkty)</div><div class="ttdoc">Ustawia ścieżkę w zależności od kąta i długości oraz punktów.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00079">Dron.cpp:79</a></div></div>
+<div class="ttc" id="aclass_dron_html_a683b95aafde4ca2d658343010ddc9252"><div class="ttname"><a href="class_dron.html#a683b95aafde4ca2d658343010ddc9252">Dron::CzyObrysyNakladajaSie</a></div><div class="ttdeci">virtual bool CzyObrysyNakladajaSie(Wektor3D pol, double promien) const override</div><div class="ttdoc">Metoda wirtualna sprawdza czy obrys drona nakłada się z obiektem.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00256">Dron.hh:256</a></div></div>
+<div class="ttc" id="aclass_dron_html_af11dde852929625ae6ddb0acbab3f36d"><div class="ttname"><a href="class_dron.html#af11dde852929625ae6ddb0acbab3f36d">Dron::WezPromien</a></div><div class="ttdeci">double WezPromien() const</div><div class="ttdoc">Umożliwia odczyt promienia drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00223">Dron.hh:223</a></div></div>
+<div class="ttc" id="aclass_dron_html_a4ad9b8277ef0a4318a69bf49b68920ee"><div class="ttname"><a href="class_dron.html#a4ad9b8277ef0a4318a69bf49b68920ee">Dron::WezRotor</a></div><div class="ttdeci">Graniastoslup WezRotor(unsigned int i) const</div><div class="ttdoc">Pozwala odczytać lokalne współrzędne rotora.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00201">Dron.hh:201</a></div></div>
+<div class="ttc" id="aclass_dron_html_a6fba59c6e0917ba92c32d2ca76772ecb"><div class="ttname"><a href="class_dron.html#a6fba59c6e0917ba92c32d2ca76772ecb">Dron::WezKorpus</a></div><div class="ttdeci">Prostopadloscian WezKorpus() const</div><div class="ttdoc">Pozwala odczytać lokalne współrzędne korpusu.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00193">Dron.hh:193</a></div></div>
+<div class="ttc" id="aclass_dron_html_a20e613a519fbff8b7561325a1b965171"><div class="ttname"><a href="class_dron.html#a20e613a519fbff8b7561325a1b965171">Dron::Korpus</a></div><div class="ttdeci">Prostopadloscian Korpus</div><div class="ttdoc">Korpus drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00045">Dron.hh:45</a></div></div>
+<div class="ttc" id="aclass_element_sceny_html"><div class="ttname"><a href="class_element_sceny.html">ElementSceny</a></div><div class="ttdoc">Tworzy pojęcie elementu sceny.</div><div class="ttdef"><b>Definition:</b> <a href="_element_sceny_8hh_source.html#l00014">ElementSceny.hh:14</a></div></div>
+<div class="ttc" id="aclass_dron_html_ab2a049e5f84be7b0c885f0a13ce17b3c"><div class="ttname"><a href="class_dron.html#ab2a049e5f84be7b0c885f0a13ce17b3c">Dron::PoziomyLot</a></div><div class="ttdeci">bool PoziomyLot(double Dlugosc_lotu, PzG::LaczeDoGNUPlota &amp;Lacze)</div><div class="ttdoc">Realizuje poziomy przelot.</div></div>
+<div class="ttc" id="aclass_graniastoslup_html"><div class="ttname"><a href="class_graniastoslup.html">Graniastoslup</a></div><div class="ttdoc">Tworzy pojęcie graniastosłupa.</div><div class="ttdef"><b>Definition:</b> <a href="_graniastoslup_8hh_source.html#l00015">Graniastoslup.hh:15</a></div></div>
+<div class="ttc" id="aclass_pz_g_1_1_lacze_do_g_n_u_plota_html"><div class="ttname"><a href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a></div><div class="ttdoc">Klasa realizuje interfejs do programu GNUPlot.</div><div class="ttdef"><b>Definition:</b> <a href="lacze__do__gnuplota_8hh_source.html#l00331">lacze_do_gnuplota.hh:331</a></div></div>
+<div class="ttc" id="aclass_dron_html_a74d9840a80d626e272cc32cb8ea56e6c"><div class="ttname"><a href="class_dron.html#a74d9840a80d626e272cc32cb8ea56e6c">Dron::CzyMoznaLadowac</a></div><div class="ttdeci">bool CzyMoznaLadowac(const std::list&lt; std::shared_ptr&lt; ElementSceny &gt;&gt; &amp;ElementySceny) const</div><div class="ttdoc">Sprawdza czy jest możliwe lądowanie drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00408">Dron.cpp:408</a></div></div>
+<div class="ttc" id="aclass_dron_html_ac945c1ec4d2fc338298e335d11c6dddf"><div class="ttname"><a href="class_dron.html#ac945c1ec4d2fc338298e335d11c6dddf">Dron::WezKat</a></div><div class="ttdeci">double WezKat() const</div><div class="ttdoc">Umożliwia odczyt kąta.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00121">Dron.hh:121</a></div></div>
+<div class="ttc" id="aclass_dron_html_af747f7c4971aa537fe6f5bb8732ca165"><div class="ttname"><a href="class_dron.html#af747f7c4971aa537fe6f5bb8732ca165">Dron::PionowyLot</a></div><div class="ttdeci">bool PionowyLot(double Dlugosc_lotu, PzG::LaczeDoGNUPlota &amp;Lacze)</div><div class="ttdoc">Realizuje pionowy przelot.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00229">Dron.cpp:229</a></div></div>
+<div class="ttc" id="aclass_dron_html_afd8fb90124181ef3412a8674a89cbe17"><div class="ttname"><a href="class_dron.html#afd8fb90124181ef3412a8674a89cbe17">Dron::NazwaTypu</a></div><div class="ttdeci">virtual const char * NazwaTypu() const override</div><div class="ttdoc">Metoda wirtualna.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00230">Dron.hh:230</a></div></div>
+<div class="ttc" id="aclass_dron_html_ae9b8a464e28bef5d688f49f7d9443fed"><div class="ttname"><a href="class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed">Dron::Dron</a></div><div class="ttdeci">Dron()</div><div class="ttdoc">Tworzy domyślny obiekt dron.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00003">Dron.cpp:3</a></div></div>
+<div class="ttc" id="aclass_dron_html_a8be799e9c7474b1549e20b92bf121cf5"><div class="ttname"><a href="class_dron.html#a8be799e9c7474b1549e20b92bf121cf5">Dron::PlanujZmianeSciezki</a></div><div class="ttdeci">bool PlanujZmianeSciezki(double Kat_skretu, double Dlugosc_lotu, std::vector&lt; Wektor3D &gt; &amp;punkty)</div><div class="ttdoc">Funkcja tworzy dalszą trasę&amp;#160;gdy mogłaby nastąpić kolizja.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00422">Dron.cpp:422</a></div></div>
+<div class="ttc" id="a_element_sceny_8hh_html"><div class="ttname"><a href="_element_sceny_8hh.html">ElementSceny.hh</a></div></div>
+<div class="ttc" id="alacze__do__gnuplota_8hh_html"><div class="ttname"><a href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a></div></div>
+<div class="ttc" id="aclass_dron_html_aa4bebff2087e3f28e91837ce53aff246"><div class="ttname"><a href="class_dron.html#aa4bebff2087e3f28e91837ce53aff246">Dron::ObrotLot</a></div><div class="ttdeci">bool ObrotLot(double Kat, PzG::LaczeDoGNUPlota &amp;Lacze)</div><div class="ttdoc">Realizuje obrót drona o dany kąt.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00331">Dron.cpp:331</a></div></div>
+<div class="ttc" id="aclass_dron_html_af242b4ec503890ecaa71e6fbc1b58fec"><div class="ttname"><a href="class_dron.html#af242b4ec503890ecaa71e6fbc1b58fec">Dron::ObracajRotorami</a></div><div class="ttdeci">void ObracajRotorami()</div><div class="ttdoc">Relizuje obrót rotorami drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00390">Dron.cpp:390</a></div></div>
+<div class="ttc" id="aclass_dron_html_a3050eed982c6ac5bf56fa2f41a5f54da"><div class="ttname"><a href="class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da">Dron::Oblicz_i_Zapisz_WspGlbRotora</a></div><div class="ttdeci">bool Oblicz_i_Zapisz_WspGlbRotora(const Graniastoslup &amp;Rotor) const</div><div class="ttdoc">Przenosi współrzędne rotora z układu lokalnego do globalnego.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00165">Dron.cpp:165</a></div></div>
+<div class="ttc" id="aclass_wektor_html"><div class="ttname"><a href="class_wektor.html">Wektor&lt; 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_dron_html_acff319f5313ad414881ba041caded67d"><div class="ttname"><a href="class_dron.html#acff319f5313ad414881ba041caded67d">Dron::PoziomyLotPoZmianieSciezki</a></div><div class="ttdeci">bool PoziomyLotPoZmianieSciezki(std::vector&lt; Wektor3D &gt; &amp;punkty, PzG::LaczeDoGNUPlota &amp;Lacze)</div><div class="ttdoc">Realizuje przelot drona po nowej ścieżce.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00446">Dron.cpp:446</a></div></div>
+<div class="ttc" id="aclass_dron_html_a4613098046c3c77560bef3ac4f99a709"><div class="ttname"><a href="class_dron.html#a4613098046c3c77560bef3ac4f99a709">Dron::WezKat</a></div><div class="ttdeci">double &amp; WezKat()</div><div class="ttdoc">Umożliwia zmianę kąta przez zwrócenie referencji.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00114">Dron.hh:114</a></div></div>
+<div class="ttc" id="aclass_dron_html_ae15081ea15c136463912826f3c2fb79b"><div class="ttname"><a href="class_dron.html#ae15081ea15c136463912826f3c2fb79b">Dron::Oblicz_i_Zapisz_WspGlbKorpusu</a></div><div class="ttdeci">bool Oblicz_i_Zapisz_WspGlbKorpusu()</div><div class="ttdoc">Przenosi współrzędne korpusu z układu lokalnego do globalnego.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00116">Dron.cpp:116</a></div></div>
+<div class="ttc" id="aclass_dron_html_a040c64ec815ec2bf62ec4bde7e8b78b8"><div class="ttname"><a href="class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8">Dron::WezPolozenie</a></div><div class="ttdeci">Wektor3D &amp; WezPolozenie()</div><div class="ttdoc">Umożliwia zmianę położenia drona przez zwrócenie referencji.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00100">Dron.hh:100</a></div></div>
+<div class="ttc" id="aclass_dron_html"><div class="ttname"><a href="class_dron.html">Dron</a></div><div class="ttdoc">Tworzy pojęcie drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00026">Dron.hh:26</a></div></div>
+<div class="ttc" id="aclass_dron_html_affc909926cb888b98c5ee96061bb444f"><div class="ttname"><a href="class_dron.html#affc909926cb888b98c5ee96061bb444f">Dron::Oblicz_i_Zapisz_WspGlbDrona</a></div><div class="ttdeci">bool Oblicz_i_Zapisz_WspGlbDrona()</div><div class="ttdoc">Zapisuje współrzędne drona do układu globalnego.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00210">Dron.cpp:210</a></div></div>
+<div class="ttc" id="aclass_dron_html_af845587fddb32c14b1998a884f1aa2b7"><div class="ttname"><a href="class_dron.html#af845587fddb32c14b1998a884f1aa2b7">Dron::Kat_Orientacji</a></div><div class="ttdeci">double Kat_Orientacji</div><div class="ttdoc">Kąt oreintacji drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00039">Dron.hh:39</a></div></div>
+<div class="ttc" id="aclass_dron_html_a9b22f1a47c9c9209255340616e575e9e"><div class="ttname"><a href="class_dron.html#a9b22f1a47c9c9209255340616e575e9e">Dron::Promien</a></div><div class="ttdeci">double Promien</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00059">Dron.hh:59</a></div></div>
+<div class="ttc" id="aclass_prostopadloscian_html"><div class="ttname"><a href="class_prostopadloscian.html">Prostopadloscian</a></div><div class="ttdoc">Tworzy pojęcie prostopadłościanu.</div><div class="ttdef"><b>Definition:</b> <a href="_prostopadloscian_8hh_source.html#l00016">Prostopadloscian.hh:16</a></div></div>
+<div class="ttc" id="aclass_dron_html_ab68c16525e3011cb70f477cd7a73b972"><div class="ttname"><a href="class_dron.html#ab68c16525e3011cb70f477cd7a73b972">Dron::Polozenie</a></div><div class="ttdeci">Wektor3D Polozenie</div><div class="ttdoc">Położenie drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00033">Dron.hh:33</a></div></div>
+<div class="ttc" id="aclass_dron_html_aa88f09d4280b6455f0cdbe5ff5f41599"><div class="ttname"><a href="class_dron.html#aa88f09d4280b6455f0cdbe5ff5f41599">Dron::Lacze_dron</a></div><div class="ttdeci">PzG::LaczeDoGNUPlota Lacze_dron</div><div class="ttdoc">Lącze umożliwiające rysowanie w gnuplocie.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00058">Dron.hh:58</a></div></div>
+<div class="ttc" id="aclass_dron_html_acf8daf2f4d453c301cbacba50b7c5a14"><div class="ttname"><a href="class_dron.html#acf8daf2f4d453c301cbacba50b7c5a14">Dron::RotorDrona</a></div><div class="ttdeci">Graniastoslup RotorDrona[ILOSC_ROTOROW]</div><div class="ttdoc">Rotory drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00051">Dron.hh:51</a></div></div>
+<div class="ttc" id="aclass_dron_html_a212031206db1cfb5579e0021992ec2cf"><div class="ttname"><a href="class_dron.html#a212031206db1cfb5579e0021992ec2cf">Dron::ObliczPromien</a></div><div class="ttdeci">void ObliczPromien(Wektor3D punkt)</div><div class="ttdoc">Funkcja licząca promień drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8cpp_source.html#l00378">Dron.cpp:378</a></div></div>
+<div class="ttc" id="a_dron_8hh_html_a9f5ca209b61eae19f489e3af0ab5637d"><div class="ttname"><a href="_dron_8hh.html#a9f5ca209b61eae19f489e3af0ab5637d">ILOSC_ROTOROW</a></div><div class="ttdeci">#define ILOSC_ROTOROW</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00010">Dron.hh:10</a></div></div>
+<div class="ttc" id="aclass_dron_html_a08295b2f17cb6abaaefe9cb5bb3b95a5"><div class="ttname"><a href="class_dron.html#a08295b2f17cb6abaaefe9cb5bb3b95a5">Dron::WezPolozenie</a></div><div class="ttdeci">Wektor3D WezPolozenie() const</div><div class="ttdoc">Umożliwia odczyt położenia drona.</div><div class="ttdef"><b>Definition:</b> <a href="_dron_8hh_source.html#l00107">Dron.hh:107</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_72345776cd6700fb0dedb8f1faaa0c00.html">inc</a></li><li class="navelem"><a class="el" href="_dron_8hh.html">Dron.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

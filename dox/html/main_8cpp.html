@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dron Faza 3: Dokumentacja pliku /home/standardowe/PO/testowanie repo/DronFaza3/gotowy/prj/src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron Faza 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="lacze__do__gnuplota_8hh_source.html">lacze_do_gnuplota.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_wektor_8hh_source.html">Wektor.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_macierz_8hh_source.html">Macierz.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_macierz3x3_8hh_source.html">Macierz3x3.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_rotacja_8hh_source.html">Rotacja.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_graniastoslup_8hh_source.html">Graniastoslup.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_bryla_geometryczna_8hh_source.html">BrylaGeometryczna.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_prostopadloscian_8hh_source.html">Prostopadloscian.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_dron_8hh_source.html">Dron.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scena_8hh_source.html">Scena.hh</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2main_8cpp" alt=""/></div>
+<map name="_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2main_8cpp" id="_2home_2standardowe_2_p_o_2testowanie_01repo_2_dron_faza3_2gotowy_2prj_2src_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="773,5,976,61"/>
+<area shape="rect" title=" " alt="" coords="395,781,475,808"/>
+<area shape="rect" title=" " alt="" coords="1154,483,1227,509"/>
+<area shape="rect" title=" " alt="" coords="1244,781,1319,808"/>
+<area shape="rect" title=" " alt="" coords="25,781,87,808"/>
+<area shape="rect" title=" " alt="" coords="964,781,1033,808"/>
+<area shape="rect" title=" " alt="" coords="1153,259,1228,285"/>
+<area shape="rect" href="lacze__do__gnuplota_8hh.html" title=" " alt="" coords="984,408,1147,435"/>
+<area shape="rect" href="_wektor_8hh.html" title="Ten plik powinien zawierać definicję szablonu Wektor&lt;&gt;" alt="" coords="721,707,807,733"/>
+<area shape="rect" href="_macierz_8hh.html" title="Ten plik zawiera definicję szablonu Macierz&lt;&gt;" alt="" coords="119,632,212,659"/>
+<area shape="rect" href="_macierz3x3_8hh.html" title=" " alt="" coords="255,557,372,584"/>
+<area shape="rect" href="_rotacja_8hh.html" title=" " alt="" coords="484,483,575,509"/>
+<area shape="rect" href="_graniastoslup_8hh.html" title=" " alt="" coords="501,333,633,360"/>
+<area shape="rect" href="_bryla_geometryczna_8hh.html" title=" " alt="" coords="679,408,849,435"/>
+<area shape="rect" href="_prostopadloscian_8hh.html" title=" " alt="" coords="271,333,425,360"/>
+<area shape="rect" href="_dron_8hh.html" title=" " alt="" coords="966,184,1039,211"/>
+<area shape="rect" href="_scena_8hh.html" title=" " alt="" coords="782,109,863,136"/>
+<area shape="rect" title=" " alt="" coords="801,483,860,509"/>
+<area shape="rect" title=" " alt="" coords="985,483,1028,509"/>
+<area shape="rect" title=" " alt="" coords="1103,557,1166,584"/>
+<area shape="rect" title=" " alt="" coords="649,483,727,509"/>
+<area shape="rect" href="_element_sceny_8hh.html" title=" " alt="" coords="601,259,735,285"/>
+<area shape="rect" title=" " alt="" coords="961,259,1028,285"/>
+<area shape="rect" href="_plaskowyz_8hh.html" title=" " alt="" coords="621,184,731,211"/>
+<area shape="rect" href="_gora__z__grania_8hh.html" title=" " alt="" coords="755,184,890,211"/>
+<area shape="rect" href="_gora__z__ostrym__szczytem_8hh.html" title=" " alt="" coords="387,184,597,211"/>
+</map>
+</div>
+</div>
+<p><a href="main_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:afdf1ca9e7afc3e7ec41b47fea4b3d80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d">Menu</a> ()</td></tr>
+<tr class="separator:afdf1ca9e7afc3e7ec41b47fea4b3d80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0bf1e6eff0616f13f450a7f2919c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f">MenuPrzeszkod</a> ()</td></tr>
+<tr class="separator:afb0bf1e6eff0616f13f450a7f2919c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4516ae6d4db49f38c56069c35b41f492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492">Kontrola_odczytu_indeksu_przeszkody</a> (int &amp;dana)</td></tr>
+<tr class="separator:a4516ae6d4db49f38c56069c35b41f492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f452299852ea7e03926bf6e0c2648f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f">Kontrola_przy_usuwaniu</a> (int &amp;dana, int &amp;limit)</td></tr>
+<tr class="separator:a57f452299852ea7e03926bf6e0c2648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad128e8b0649a121fc46b2fcf26d1e6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3">IloscWektorow</a> ()</td></tr>
+<tr class="separator:ad128e8b0649a121fc46b2fcf26d1e6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ad128e8b0649a121fc46b2fcf26d1e6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad128e8b0649a121fc46b2fcf26d1e6b3">&#9670;&nbsp;</a></span>IloscWektorow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IloscWektorow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00147">147</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_cgraph.png" border="0" usemap="#main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_cgraph" alt=""/></div>
+<map name="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_cgraph" id="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,123,69"/>
+<area shape="rect" href="class_wektor.html#aeec7ff86aa3b7fc086b76373b897813c" title=" " alt="" coords="183,5,345,47"/>
+<area shape="rect" href="class_wektor.html#adb2cc0589dd4bece4f86dfc0bce63dce" title=" " alt="" coords="171,71,357,98"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_icgraph.png" border="0" usemap="#main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_icgraph" alt=""/></div>
+<map name="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_icgraph" id="main_8cpp_ad128e8b0649a121fc46b2fcf26d1e6b3_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,225,32"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4516ae6d4db49f38c56069c35b41f492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4516ae6d4db49f38c56069c35b41f492">&#9670;&nbsp;</a></span>Kontrola_odczytu_indeksu_przeszkody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kontrola_odczytu_indeksu_przeszkody </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>dana</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00125">125</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a4516ae6d4db49f38c56069c35b41f492_icgraph.png" border="0" usemap="#main_8cpp_a4516ae6d4db49f38c56069c35b41f492_icgraph" alt=""/></div>
+<map name="main_8cpp_a4516ae6d4db49f38c56069c35b41f492_icgraph" id="main_8cpp_a4516ae6d4db49f38c56069c35b41f492_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,300,47"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57f452299852ea7e03926bf6e0c2648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f452299852ea7e03926bf6e0c2648f">&#9670;&nbsp;</a></span>Kontrola_przy_usuwaniu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kontrola_przy_usuwaniu </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>dana</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00136">136</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a57f452299852ea7e03926bf6e0c2648f_icgraph.png" border="0" usemap="#main_8cpp_a57f452299852ea7e03926bf6e0c2648f_icgraph" alt=""/></div>
+<map name="main_8cpp_a57f452299852ea7e03926bf6e0c2648f_icgraph" id="main_8cpp_a57f452299852ea7e03926bf6e0c2648f_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,288,32"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00027">27</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,404,60,431"/>
+<area shape="rect" href="class_scena.html#a75d557edef5ded0328fc084c644e290d" title="Funkcja umożliwiwająca wzięcie danego drona." alt="" coords="117,145,297,172"/>
+<area shape="rect" href="main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3" title=" " alt="" coords="149,280,266,307"/>
+<area shape="rect" href="main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492" title=" " alt="" coords="111,331,303,373"/>
+<area shape="rect" href="class_wektor.html#a21053fb076b6443343429ecfc97455cd" title="Sprawdza czy udało się poprawnie wczytać współrzędne wektora." alt="" coords="113,397,301,438"/>
+<area shape="rect" href="main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f" title=" " alt="" coords="117,463,297,489"/>
+<area shape="rect" href="main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d" title=" " alt="" coords="178,513,237,540"/>
+<area shape="rect" href="main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f" title=" " alt="" coords="146,564,269,591"/>
+<area shape="rect" href="class_scena.html#ac46eba52b4bcc088b2bcf2e5628a530d" title="Usuwa przeszkodę" alt="" coords="120,229,295,256"/>
+<area shape="rect" href="class_scena.html#ab3c6583030ea463bfd0a3498289f94c8" title=" " alt="" coords="135,79,280,105"/>
+<area shape="rect" href="class_scena.html#a4016f6fdd081bab5dc29741b1f31436a" title=" " alt="" coords="136,615,279,641"/>
+<area shape="rect" href="class_scena.html#a4f12c98efdffe43e97b66b152db0a563" title="Wyświetla istniejące przeszkody." alt="" coords="108,665,307,692"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#aa815ce8ec16e12fc246cf422e562869e" title="Dodaje nazwę pliku." alt="" coords="361,57,535,98"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="Generuje polecenie rysowania i przesyła je do gnuplota." alt="" coords="361,122,535,163"/>
+<area shape="rect" href="class_scena.html#a20caf1d7cbfd3180bcbc14e249031ad2" title=" " alt="" coords="355,188,541,215"/>
+<area shape="rect" href="namespace_pz_g.html#ae1aad0c681853d7e47da4cdfccefc102" title="Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku." alt="" coords="643,64,770,91"/>
+<area shape="rect" href="namespace_pz_g.html#aa010184f31b26bb561b42f22438b821e" title="Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku." alt="" coords="596,119,817,145"/>
+<area shape="rect" href="namespace_pz_g.html#a7227cb39c785b1c746b6bb5515c0b781" title="Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach." alt="" coords="589,170,824,211"/>
+<area shape="rect" href="namespace_pz_g.html#a169c311f0e0b6ffadcd44e91e749f72d" title="Wczytuje z pliku listę punktów." alt="" coords="872,170,1065,211"/>
+<area shape="rect" href="class_pz_g_1_1_atrybuty_rysowania.html#ab068535b4d2f755c394557d1da72a4eb" title="Zmienia kolor rysowania." alt="" coords="1113,105,1296,146"/>
+<area shape="rect" href="class_pz_g_1_1_atrybuty_rysowania.html#af4b140eb03bc10b6fd816fad63f8372e" title="Zmienia rozmiar rysowania." alt="" coords="1113,170,1296,211"/>
+<area shape="rect" href="class_pz_g_1_1_atrybuty_rysowania.html#a2ac97706124b14072715ecf3f07e82b4" title="Zmienia styl rysowania." alt="" coords="1113,235,1296,277"/>
+<area shape="rect" href="class_wektor.html#aeec7ff86aa3b7fc086b76373b897813c" title=" " alt="" coords="367,305,529,346"/>
+<area shape="rect" href="class_wektor.html#adb2cc0589dd4bece4f86dfc0bce63dce" title=" " alt="" coords="355,371,541,397"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6" title="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę." alt="" coords="361,239,535,281"/>
+<area shape="rect" href="class_pz_g_1_1_info_pliku_do_rysowania.html#a714aaa4c8e7bbd167ccbb1e797ca158c" title="Udostępia nazwę pliku do rysowania." alt="" coords="607,239,807,281"/>
+<area shape="rect" href="_scena_8cpp.html#a9a309e87e4ad6938d3e73a3a8178bbdb" title="Sprawdza czy podano poprawnie liczbę" alt="" coords="359,5,537,32"/>
+<area shape="rect" href="class_scena.html#ab6575b438e1e275d180b8e659afdb3a4" title=" " alt="" coords="357,607,539,649"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdf1ca9e7afc3e7ec41b47fea4b3d80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf1ca9e7afc3e7ec41b47fea4b3d80d">&#9670;&nbsp;</a></span>Menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00096">96</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d_icgraph.png" border="0" usemap="#main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d_icgraph" alt=""/></div>
+<map name="main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d_icgraph" id="main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,167,32"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb0bf1e6eff0616f13f450a7f2919c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0bf1e6eff0616f13f450a7f2919c1f">&#9670;&nbsp;</a></span>MenuPrzeszkod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuPrzeszkod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="main_8cpp_source.html#l00106">106</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_afb0bf1e6eff0616f13f450a7f2919c1f_icgraph.png" border="0" usemap="#main_8cpp_afb0bf1e6eff0616f13f450a7f2919c1f_icgraph" alt=""/></div>
+<map name="main_8cpp_afb0bf1e6eff0616f13f450a7f2919c1f_icgraph" id="main_8cpp_afb0bf1e6eff0616f13f450a7f2919c1f_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,231,32"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li><li class="navelem"><a class="el" href="dir_400757c3a0df52e783ed9699284f29ce.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

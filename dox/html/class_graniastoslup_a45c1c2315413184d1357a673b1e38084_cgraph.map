@@ -1,0 +1,6 @@
+<map id="Graniastoslup::TransfDoUkladuRodzica" name="Graniastoslup::TransfDoUkladuRodzica">
+<area shape="rect" id="node1" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="5,49,228,90"/>
+<area shape="rect" id="node2" href="$_rotacja_8hh.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="327,5,394,32"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#acf01c2144561581cfde2790064025439" title="Umożliwia zmianę kąta przez referencję" alt="" coords="276,56,445,83"/>
+<area shape="rect" id="node4" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="281,107,440,149"/>
+</map>

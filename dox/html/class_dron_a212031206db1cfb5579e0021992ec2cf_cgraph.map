@@ -1,0 +1,6 @@
+<map id="Dron::ObliczPromien" name="Dron::ObliczPromien">
+<area shape="rect" id="node1" title="Funkcja licząca promień drona." alt="" coords="5,56,160,83"/>
+<area shape="rect" id="node2" href="$class_wektor.html#a6c663cba162a770cab42926b810417bd" title="Oblicza długość odcinka utworzonego przez 2 wektory." alt="" coords="208,5,381,32"/>
+<area shape="rect" id="node3" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="219,56,370,83"/>
+<area shape="rect" id="node4" href="$class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e" title="Umożliwia modyfikację promienia." alt="" coords="223,107,366,133"/>
+</map>

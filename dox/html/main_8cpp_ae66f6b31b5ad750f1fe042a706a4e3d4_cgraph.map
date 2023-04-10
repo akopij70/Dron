@@ -1,0 +1,30 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,404,60,431"/>
+<area shape="rect" id="node2" href="$class_scena.html#a75d557edef5ded0328fc084c644e290d" title="Funkcja umożliwiwająca wzięcie danego drona." alt="" coords="117,145,297,172"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#ad128e8b0649a121fc46b2fcf26d1e6b3" title=" " alt="" coords="149,280,266,307"/>
+<area shape="rect" id="node16" href="$main_8cpp.html#a4516ae6d4db49f38c56069c35b41f492" title=" " alt="" coords="111,331,303,373"/>
+<area shape="rect" id="node17" href="$class_wektor.html#a21053fb076b6443343429ecfc97455cd" title="Sprawdza czy udało się poprawnie wczytać współrzędne wektora." alt="" coords="113,397,301,438"/>
+<area shape="rect" id="node18" href="$main_8cpp.html#a57f452299852ea7e03926bf6e0c2648f" title=" " alt="" coords="117,463,297,489"/>
+<area shape="rect" id="node19" href="$main_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d" title=" " alt="" coords="178,513,237,540"/>
+<area shape="rect" id="node20" href="$main_8cpp.html#afb0bf1e6eff0616f13f450a7f2919c1f" title=" " alt="" coords="146,564,269,591"/>
+<area shape="rect" id="node21" href="$class_scena.html#ac46eba52b4bcc088b2bcf2e5628a530d" title="Usuwa przeszkodę" alt="" coords="120,229,295,256"/>
+<area shape="rect" id="node24" href="$class_scena.html#ab3c6583030ea463bfd0a3498289f94c8" title=" " alt="" coords="135,79,280,105"/>
+<area shape="rect" id="node26" href="$class_scena.html#a4016f6fdd081bab5dc29741b1f31436a" title=" " alt="" coords="136,615,279,641"/>
+<area shape="rect" id="node28" href="$class_scena.html#a4f12c98efdffe43e97b66b152db0a563" title="Wyświetla istniejące przeszkody." alt="" coords="108,665,307,692"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#aa815ce8ec16e12fc246cf422e562869e" title="Dodaje nazwę pliku." alt="" coords="361,57,535,98"/>
+<area shape="rect" id="node5" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="Generuje polecenie rysowania i przesyła je do gnuplota." alt="" coords="361,122,535,163"/>
+<area shape="rect" id="node12" href="$class_scena.html#a20caf1d7cbfd3180bcbc14e249031ad2" title=" " alt="" coords="355,188,541,215"/>
+<area shape="rect" id="node4" href="$namespace_pz_g.html#ae1aad0c681853d7e47da4cdfccefc102" title="Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku." alt="" coords="643,64,770,91"/>
+<area shape="rect" id="node6" href="$namespace_pz_g.html#aa010184f31b26bb561b42f22438b821e" title="Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku." alt="" coords="596,119,817,145"/>
+<area shape="rect" id="node7" href="$namespace_pz_g.html#a7227cb39c785b1c746b6bb5515c0b781" title="Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach." alt="" coords="589,170,824,211"/>
+<area shape="rect" id="node8" href="$namespace_pz_g.html#a169c311f0e0b6ffadcd44e91e749f72d" title="Wczytuje z pliku listę punktów." alt="" coords="872,170,1065,211"/>
+<area shape="rect" id="node9" href="$class_pz_g_1_1_atrybuty_rysowania.html#ab068535b4d2f755c394557d1da72a4eb" title="Zmienia kolor rysowania." alt="" coords="1113,105,1296,146"/>
+<area shape="rect" id="node10" href="$class_pz_g_1_1_atrybuty_rysowania.html#af4b140eb03bc10b6fd816fad63f8372e" title="Zmienia rozmiar rysowania." alt="" coords="1113,170,1296,211"/>
+<area shape="rect" id="node11" href="$class_pz_g_1_1_atrybuty_rysowania.html#a2ac97706124b14072715ecf3f07e82b4" title="Zmienia styl rysowania." alt="" coords="1113,235,1296,277"/>
+<area shape="rect" id="node14" href="$class_wektor.html#aeec7ff86aa3b7fc086b76373b897813c" title=" " alt="" coords="367,305,529,346"/>
+<area shape="rect" id="node15" href="$class_wektor.html#adb2cc0589dd4bece4f86dfc0bce63dce" title=" " alt="" coords="355,371,541,397"/>
+<area shape="rect" id="node22" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6" title="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę." alt="" coords="361,239,535,281"/>
+<area shape="rect" id="node23" href="$class_pz_g_1_1_info_pliku_do_rysowania.html#a714aaa4c8e7bbd167ccbb1e797ca158c" title="Udostępia nazwę pliku do rysowania." alt="" coords="607,239,807,281"/>
+<area shape="rect" id="node25" href="$_scena_8cpp.html#a9a309e87e4ad6938d3e73a3a8178bbdb" title="Sprawdza czy podano poprawnie liczbę" alt="" coords="359,5,537,32"/>
+<area shape="rect" id="node27" href="$class_scena.html#ab6575b438e1e275d180b8e659afdb3a4" title=" " alt="" coords="357,607,539,649"/>
+</map>

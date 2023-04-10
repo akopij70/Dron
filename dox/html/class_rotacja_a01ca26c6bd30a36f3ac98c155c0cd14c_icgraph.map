@@ -1,0 +1,6 @@
+<map id="Rotacja::wez_kat" name="Rotacja::wez_kat">
+<area shape="rect" id="node1" title="Funkcja zwracająca kąt obrotu." alt="" coords="299,31,431,57"/>
+<area shape="rect" id="node2" href="$_rotacja_8cpp.html#a4b47ee90024b1e0623d1f45727d9fdee" title="Przeciążenie operatora &lt;&lt; w cely wyświetlenia danych związanych z rotacją &#45; funkcja wykorzystywana pr..." alt="" coords="152,5,251,32"/>
+<area shape="rect" id="node3" href="$_rotacja_8cpp.html#afdbf68d3df7869241399ad5e179da3b3" title="Funkcja ustalająca dla jakiej osi stworzyć macierz obrotu na podstawie obiektu Rot." alt="" coords="161,56,241,83"/>
+<area shape="rect" id="node4" href="$_rotacja_8cpp.html#a6e3701132759c5b281f6e5b16f42bec8" title="Funkcja tworząca finalną macierz obrotu przez odpowiednie wymnożenie macierzy." alt="" coords="5,56,104,83"/>
+</map>

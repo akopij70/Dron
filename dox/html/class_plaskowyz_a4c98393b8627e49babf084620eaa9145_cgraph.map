@@ -1,0 +1,7 @@
+<map id="Plaskowyz::CzyObrysyNakladajaSie" name="Plaskowyz::CzyObrysyNakladajaSie">
+<area shape="rect" id="node1" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="5,97,260,124"/>
+<area shape="rect" id="node2" href="$class_wektor.html#a6c663cba162a770cab42926b810417bd" title="Oblicza długość odcinka utworzonego przez 2 wektory." alt="" coords="308,5,481,32"/>
+<area shape="rect" id="node3" href="$class_bryla_geometryczna.html#a3fbe07e1de2d2b0913d6d7d39b46ff1a" title="Umożliwia modyfikację obrysu minimalnego bryły." alt="" coords="315,57,474,98"/>
+<area shape="rect" id="node4" href="$class_bryla_geometryczna.html#a6416d9953ff7299c2b532fb82763078a" title="Umożliwia modyfikację obrysu maksymalnego bryły." alt="" coords="315,122,474,163"/>
+<area shape="rect" id="node5" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="315,187,474,229"/>
+</map>

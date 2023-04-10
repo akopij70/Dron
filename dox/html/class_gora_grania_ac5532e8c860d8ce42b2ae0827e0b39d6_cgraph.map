@@ -1,0 +1,10 @@
+<map id="GoraGrania::Oblicz_i_Zapisz_WspGGr" name="GoraGrania::Oblicz_i_Zapisz_WspGGr">
+<area shape="rect" id="node1" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="5,169,149,211"/>
+<area shape="rect" id="node2" href="$class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Skaluje wierzchołek bryły." alt="" coords="234,71,393,112"/>
+<area shape="rect" id="node5" href="$class_gora_grania.html#adedb91449912c9c42df34034f1779559" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="210,136,417,177"/>
+<area shape="rect" id="node7" href="$class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba" title="Zwraca nazwę bryły finalnej." alt="" coords="207,201,419,243"/>
+<area shape="rect" id="node8" href="$class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e" title="Zwraca nazwę bryły wzorcowej." alt="" coords="197,267,429,308"/>
+<area shape="rect" id="node3" href="$class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="477,5,661,47"/>
+<area shape="rect" id="node4" href="$class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="490,71,649,112"/>
+<area shape="rect" id="node6" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="490,136,649,177"/>
+</map>

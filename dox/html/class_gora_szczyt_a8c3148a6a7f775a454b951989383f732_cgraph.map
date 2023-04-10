@@ -1,0 +1,14 @@
+<map id="GoraSzczyt::GoraSzczyt" name="GoraSzczyt::GoraSzczyt">
+<area shape="rect" id="node1" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="5,207,181,234"/>
+<area shape="rect" id="node2" href="$class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="237,200,380,241"/>
+<area shape="rect" id="node7" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="729,72,887,113"/>
+<area shape="rect" id="node12" href="$class_bryla_geometryczna.html#a705d2ea0d0457f053acb82cb293ed7d4" title="Umożliwia ustawienie skali." alt="" coords="229,326,388,368"/>
+<area shape="rect" id="node3" href="$class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Skaluje wierzchołek bryły." alt="" coords="473,362,631,404"/>
+<area shape="rect" id="node6" href="$class_gora_szczyt.html#a700b0421685ed503093374ee6dff6922" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="449,166,655,208"/>
+<area shape="rect" id="node8" href="$class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba" title="Zwraca nazwę bryły finalnej." alt="" coords="446,232,658,273"/>
+<area shape="rect" id="node9" href="$class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e" title="Zwraca nazwę bryły wzorcowej." alt="" coords="436,297,668,338"/>
+<area shape="rect" id="node10" href="$class_bryla_geometryczna.html#a3fbe07e1de2d2b0913d6d7d39b46ff1a" title="Umożliwia modyfikację obrysu minimalnego bryły." alt="" coords="473,36,631,77"/>
+<area shape="rect" id="node11" href="$class_bryla_geometryczna.html#a6416d9953ff7299c2b532fb82763078a" title="Umożliwia modyfikację obrysu maksymalnego bryły." alt="" coords="473,101,631,142"/>
+<area shape="rect" id="node4" href="$class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="716,356,900,397"/>
+<area shape="rect" id="node5" href="$class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="729,421,887,462"/>
+</map>

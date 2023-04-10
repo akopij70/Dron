@@ -1,0 +1,7 @@
+<map id="ElementSceny" name="ElementSceny">
+<area shape="rect" id="node1" title="Tworzy pojęcie elementu sceny." alt="" coords="133,5,248,32"/>
+<area shape="rect" id="node2" href="$class_dron.html" title="Tworzy pojęcie drona." alt="" coords="5,80,59,107"/>
+<area shape="rect" id="node3" href="$class_gora_grania.html" title="Towrzy pojęcie Góry z granią" alt="" coords="83,80,179,107"/>
+<area shape="rect" id="node4" href="$class_gora_szczyt.html" title="Towrzy pojęcie Góry z ostrym szczytem." alt="" coords="203,80,298,107"/>
+<area shape="rect" id="node5" href="$class_plaskowyz.html" title="Towrzy pojęcie Płaskowyżu." alt="" coords="323,80,413,107"/>
+</map>

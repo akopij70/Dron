@@ -1,0 +1,12 @@
+<map id="Graniastoslup::WezPolozenie" name="Graniastoslup::WezPolozenie">
+<area shape="rect" id="node1" title="Umożliwia zmianę położenia graniastosłupa przez zwrócenie referencji." alt="" coords="1171,35,1381,61"/>
+<area shape="rect" id="node2" href="$class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="316,5,408,32"/>
+<area shape="rect" id="node3" href="$class_graniastoslup.html#a45c1c2315413184d1357a673b1e38084" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="900,57,1123,98"/>
+<area shape="rect" id="node4" href="$class_dron.html#a3050eed982c6ac5bf56fa2f41a5f54da" title="Przenosi współrzędne rotora z układu lokalnego do globalnego." alt="" coords="689,57,852,98"/>
+<area shape="rect" id="node5" href="$class_dron.html#a93d08cb51d9659816e87e08f21b71a49" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="479,57,641,98"/>
+<area shape="rect" id="node6" href="$class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="303,56,421,83"/>
+<area shape="rect" id="node9" href="$class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="294,107,430,133"/>
+<area shape="rect" id="node10" href="$class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="293,157,431,184"/>
+<area shape="rect" id="node7" href="$class_scena.html#aeb5b4cb7af137b94c1063b425b2d6e8b" title="Funkcja umozliwiająca obsługę drona." alt="" coords="108,81,245,108"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+</map>

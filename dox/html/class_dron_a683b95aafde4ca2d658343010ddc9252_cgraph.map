@@ -1,0 +1,4 @@
+<map id="Dron::CzyObrysyNakladajaSie" name="Dron::CzyObrysyNakladajaSie">
+<area shape="rect" id="node1" title="Metoda wirtualna sprawdza czy obrys drona nakłada się z obiektem." alt="" coords="5,5,223,32"/>
+<area shape="rect" id="node2" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="271,5,421,32"/>
+</map>

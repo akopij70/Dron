@@ -1,0 +1,5 @@
+<map id="GoraSzczyt::TransfDoUkladuRodzica" name="GoraSzczyt::TransfDoUkladuRodzica">
+<area shape="rect" id="node1" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="420,5,627,47"/>
+<area shape="rect" id="node2" href="$class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="229,5,372,47"/>
+<area shape="rect" id="node3" href="$class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="5,13,181,39"/>
+</map>

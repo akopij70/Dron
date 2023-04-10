@@ -1,0 +1,7 @@
+<map id="Dron::ObracajRotorami" name="Dron::ObracajRotorami">
+<area shape="rect" id="node1" title="Relizuje obrót rotorami drona." alt="" coords="260,81,431,108"/>
+<area shape="rect" id="node2" href="$class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,5,167,32"/>
+<area shape="rect" id="node3" href="$class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,56,177,83"/>
+<area shape="rect" id="node4" href="$class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,107,177,133"/>
+<area shape="rect" id="node5" href="$class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,158,212,199"/>
+</map>

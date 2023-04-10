@@ -1,0 +1,12 @@
+<map id="BrylaGeometryczna::WezObrys1" name="BrylaGeometryczna::WezObrys1">
+<area shape="rect" id="node1" title="Umożliwia modyfikację obrysu minimalnego bryły." alt="" coords="540,129,699,170"/>
+<area shape="rect" id="node2" href="$class_plaskowyz.html#a4c98393b8627e49babf084620eaa9145" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="235,5,489,32"/>
+<area shape="rect" id="node3" href="$class_gora_szczyt.html#abb44970bcd910a10be8c8d2f29c68e12" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="233,56,491,83"/>
+<area shape="rect" id="node4" href="$class_gora_grania.html#af69de9ae4a1523fe6a4c96443393a2dd" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="232,107,492,133"/>
+<area shape="rect" id="node5" href="$class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="290,158,434,199"/>
+<area shape="rect" id="node7" href="$class_gora_szczyt.html#ad11ebc51e39806805b09a413984c7ae0" title="Oblicza i zapisuje współrzedne góry do pliku." alt="" coords="291,223,433,265"/>
+<area shape="rect" id="node9" href="$class_plaskowyz.html#ac0e418b08182a89484ccc95a64c2f401" title="Oblicza i zapisuje wspolrzedne płaskowyżu do pliku." alt="" coords="287,289,437,330"/>
+<area shape="rect" id="node6" href="$class_gora_grania.html#ad2592d6ee8453ec06687a5b7fbc46fee" title="Tworzy obiekt GoraGrania." alt="" coords="5,165,184,192"/>
+<area shape="rect" id="node8" href="$class_gora_szczyt.html#a8c3148a6a7f775a454b951989383f732" title="Tworzy nowy obiekt GoraSzczyt." alt="" coords="7,231,183,257"/>
+<area shape="rect" id="node10" href="$class_plaskowyz.html#aef6d92d37a0a639e4fadb60fd06c1ed2" title="Tworzy nowy obiekt Plaskowyz." alt="" coords="11,296,178,323"/>
+</map>

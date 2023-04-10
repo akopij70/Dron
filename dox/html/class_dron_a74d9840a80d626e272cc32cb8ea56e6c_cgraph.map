@@ -1,0 +1,5 @@
+<map id="Dron::CzyMoznaLadowac" name="Dron::CzyMoznaLadowac">
+<area shape="rect" id="node1" title="Sprawdza czy jest możliwe lądowanie drona." alt="" coords="5,31,191,57"/>
+<area shape="rect" id="node2" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="239,5,389,32"/>
+<area shape="rect" id="node3" href="$class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e" title="Umożliwia modyfikację promienia." alt="" coords="243,56,385,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Dron::ObracajRotorami" name="Dron::ObracajRotorami">
+<area shape="rect" id="node1" title="Relizuje obrót rotorami drona." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$class_graniastoslup.html#acf01c2144561581cfde2790064025439" title="Umożliwia zmianę kąta przez referencję" alt="" coords="224,5,393,32"/>
+</map>

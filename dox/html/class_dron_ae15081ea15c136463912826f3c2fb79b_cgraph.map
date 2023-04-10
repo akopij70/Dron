@@ -1,0 +1,18 @@
+<map id="Dron::Oblicz_i_Zapisz_WspGlbKorpusu" name="Dron::Oblicz_i_Zapisz_WspGlbKorpusu">
+<area shape="rect" id="node1" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="5,285,168,326"/>
+<area shape="rect" id="node2" href="$class_dron.html#a212031206db1cfb5579e0021992ec2cf" title="Funkcja licząca promień drona." alt="" coords="255,96,409,123"/>
+<area shape="rect" id="node6" href="$class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Skaluje wierzchołek bryły." alt="" coords="253,317,411,358"/>
+<area shape="rect" id="node9" href="$class_prostopadloscian.html#acfc665032bfc36ccf4ed5055910cd049" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="242,251,422,293"/>
+<area shape="rect" id="node13" href="$class_dron.html#a0517cc1838ab42c77fc304fd073c995d" title="Transformuje punkt drona do układu sceny." alt="" coords="223,168,441,195"/>
+<area shape="rect" id="node15" href="$class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba" title="Zwraca nazwę bryły finalnej." alt="" coords="226,382,438,423"/>
+<area shape="rect" id="node16" href="$class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e" title="Zwraca nazwę bryły wzorcowej." alt="" coords="216,447,448,489"/>
+<area shape="rect" id="node3" href="$class_wektor.html#a6c663cba162a770cab42926b810417bd" title="Oblicza długość odcinka utworzonego przez 2 wektory." alt="" coords="505,5,678,32"/>
+<area shape="rect" id="node4" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="516,107,667,133"/>
+<area shape="rect" id="node5" href="$class_dron.html#a426218a8cc4de61b2bac171f54ec4d3e" title="Umożliwia modyfikację promienia." alt="" coords="520,56,663,83"/>
+<area shape="rect" id="node7" href="$class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="499,375,683,417"/>
+<area shape="rect" id="node8" href="$class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="512,441,671,482"/>
+<area shape="rect" id="node10" href="$_rotacja_8hh.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="558,208,625,235"/>
+<area shape="rect" id="node11" href="$class_prostopadloscian.html#a98b34057e53b313f537b5a71b12c16f8" title="Umożliwia zmianę kąta przez zwrócenie referencji." alt="" coords="496,259,687,285"/>
+<area shape="rect" id="node12" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="512,310,671,351"/>
+<area shape="rect" id="node14" href="$class_dron.html#a4613098046c3c77560bef3ac4f99a709" title="Umożliwia zmianę kąta przez zwrócenie referencji." alt="" coords="536,157,647,184"/>
+</map>

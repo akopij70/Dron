@@ -1,0 +1,14 @@
+<map id="GoraGrania::GoraGrania" name="GoraGrania::GoraGrania">
+<area shape="rect" id="node1" title="Tworzy obiekt GoraGrania." alt="" coords="5,207,184,234"/>
+<area shape="rect" id="node2" href="$class_gora_grania.html#a1a14d8b5310f304897d120b3e6afb012" title="Oblicza i zapisuje współrzędne góry do pliku." alt="" coords="239,200,383,241"/>
+<area shape="rect" id="node7" href="$class_bryla_geometryczna.html#a631f26a7e921c1ad1a843e6943cfd74f" title="Umożliwia zmianę położenia przez referencję" alt="" coords="731,72,890,113"/>
+<area shape="rect" id="node12" href="$class_bryla_geometryczna.html#a705d2ea0d0457f053acb82cb293ed7d4" title="Umożliwia ustawienie skali." alt="" coords="232,326,391,368"/>
+<area shape="rect" id="node3" href="$class_bryla_geometryczna.html#ac6bebe1cb6dd8c95547c61059abd080b" title="Skaluje wierzchołek bryły." alt="" coords="475,362,634,404"/>
+<area shape="rect" id="node6" href="$class_gora_grania.html#adedb91449912c9c42df34034f1779559" title="Transformuje wierzchołek z układu lokalnego do globalnego." alt="" coords="451,166,658,208"/>
+<area shape="rect" id="node8" href="$class_bryla_geometryczna.html#a6a50b95a5133b9e03888441843f7e2ba" title="Zwraca nazwę bryły finalnej." alt="" coords="449,232,661,273"/>
+<area shape="rect" id="node9" href="$class_bryla_geometryczna.html#a5a877f887d4a32adf29c319dcac2334e" title="Zwraca nazwę bryły wzorcowej." alt="" coords="439,297,671,338"/>
+<area shape="rect" id="node10" href="$class_bryla_geometryczna.html#a3fbe07e1de2d2b0913d6d7d39b46ff1a" title="Umożliwia modyfikację obrysu minimalnego bryły." alt="" coords="475,36,634,77"/>
+<area shape="rect" id="node11" href="$class_bryla_geometryczna.html#a6416d9953ff7299c2b532fb82763078a" title="Umożliwia modyfikację obrysu maksymalnego bryły." alt="" coords="475,101,634,142"/>
+<area shape="rect" id="node4" href="$class_macierz.html#a9cc5ebb7269b8d2c00571c0f4c3fa4dd" title="Tworzy macierz ze skalą" alt="" coords="719,356,903,397"/>
+<area shape="rect" id="node5" href="$class_bryla_geometryczna.html#a8b266277f5b85679f8652708cac1cb4e" title="Umożliwia zmianę skali przez referencję" alt="" coords="731,421,890,462"/>
+</map>

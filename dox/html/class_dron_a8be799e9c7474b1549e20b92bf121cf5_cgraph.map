@@ -1,0 +1,6 @@
+<map id="Dron::PlanujZmianeSciezki" name="Dron::PlanujZmianeSciezki">
+<area shape="rect" id="node1" title="Funkcja tworzy dalszą trasę gdy mogłaby nastąpić kolizja." alt="" coords="5,56,203,83"/>
+<area shape="rect" id="node2" href="$_rotacja_8hh.html#ac837f1e325e3236dedd3754b2be2eafb" title="Funkcja modelująca macierz obrotu o kąt podany jako parametr wokół osi Z." alt="" coords="293,5,359,32"/>
+<area shape="rect" id="node3" href="$class_dron.html#a4613098046c3c77560bef3ac4f99a709" title="Umożliwia zmianę kąta przez zwrócenie referencji." alt="" coords="271,56,381,83"/>
+<area shape="rect" id="node4" href="$class_dron.html#a040c64ec815ec2bf62ec4bde7e8b78b8" title="Umożliwia zmianę położenia drona przez zwrócenie referencji." alt="" coords="251,107,401,133"/>
+</map>

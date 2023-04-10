@@ -1,0 +1,14 @@
+<map id="Wektor::Oblicz_dlugosc" name="Wektor::Oblicz_dlugosc">
+<area shape="rect" id="node1" title="Oblicza długość odcinka utworzonego przez 2 wektory." alt="" coords="989,81,1163,108"/>
+<area shape="rect" id="node2" href="$class_plaskowyz.html#a4c98393b8627e49babf084620eaa9145" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="684,5,939,32"/>
+<area shape="rect" id="node3" href="$class_gora_szczyt.html#abb44970bcd910a10be8c8d2f29c68e12" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="682,56,941,83"/>
+<area shape="rect" id="node4" href="$class_gora_grania.html#af69de9ae4a1523fe6a4c96443393a2dd" title="Sprawdza czy obys elementu pokrywa się z obrysem drona." alt="" coords="681,107,941,133"/>
+<area shape="rect" id="node5" href="$class_dron.html#a212031206db1cfb5579e0021992ec2cf" title="Funkcja licząca promień drona." alt="" coords="734,157,889,184"/>
+<area shape="rect" id="node6" href="$class_dron.html#ae15081ea15c136463912826f3c2fb79b" title="Przenosi współrzędne korpusu z układu lokalnego do globalnego." alt="" coords="471,150,633,191"/>
+<area shape="rect" id="node7" href="$class_dron.html#affc909926cb888b98c5ee96061bb444f" title="Zapisuje współrzędne drona do układu globalnego." alt="" coords="260,150,423,191"/>
+<area shape="rect" id="node8" href="$class_dron.html#ae9b8a464e28bef5d688f49f7d9443fed" title="Tworzy domyślny obiekt dron." alt="" coords="63,56,155,83"/>
+<area shape="rect" id="node9" href="$class_dron.html#aa4bebff2087e3f28e91837ce53aff246" title="Realizuje obrót drona o dany kąt." alt="" coords="50,107,167,133"/>
+<area shape="rect" id="node10" href="$class_dron.html#af747f7c4971aa537fe6f5bb8732ca165" title="Realizuje pionowy przelot." alt="" coords="41,157,177,184"/>
+<area shape="rect" id="node11" href="$class_dron.html#a75efcd9776dbe410c254fc4edda3ed42" title="Realizuje poziomy przelot." alt="" coords="40,208,177,235"/>
+<area shape="rect" id="node12" href="$class_dron.html#acff319f5313ad414881ba041caded67d" title="Realizuje przelot drona po nowej ścieżce." alt="" coords="5,259,212,301"/>
+</map>
